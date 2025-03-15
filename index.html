@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -178,7 +183,7 @@
                 <!-- Right Section -->
                 <div class="banner-right">
                   <img
-                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1663703841896"
+                    src="https://s3-alpha-sig.figma.com/img/dc40/ba89/7215f42e5883a64157f0aa3a4d1a866a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=byS5o5aU8BrcLW-Y0wu8VT7YwD04~INxq2Exx59oe4tuz68V~nuGryrDAwwdaSH5lQ~UliH6sHOqiLfX5UxOFHfBc1as87-QIR3Thaz~Tzbczq9XHzHquzWtGjuGZEMwxgxQHSSleOqJ5WeOOATWHbg~6SgdZrPhm7yB1EA6O5GtCU6gvscncKgE7JWDoAyQhgmLKRFBIFFQwCQeRdspu9mGHX61SZM1JFJ9eGc4DBA7aEwTYJ2u4Sddb7nLEnRClSMB-3J5yhV-jEQeE~6JOOWRrVJBRs5v~W9Fay0ohtbgKm2mUnCdg0gFg0HMqwXQB5Gvp7HRnxnZNNC1ZrfPqA__"
                     alt="iPhone 14 Pro"
                     class="banner-image"
                   />
@@ -195,6 +200,273 @@
             </div>
           </div>
         </div>
+
+        <!-- Flash Sales Section -->
+        <section class="flash-sales">
+          <div
+            class="flash-sales-header d-flex align-items-center justify-content-between"
+          >
+            <div class="header-left">
+              <div class="section-indicator d-flex align-items-center">
+                <span class="indicator-bar"></span>
+                <h3 class="today-text">Today's</h3>
+              </div>
+              <div class="d-flex align-items-center gap-4">
+                <h2 class="section-title">Flash Sales</h2>
+                <!-- Countdown Timer -->
+                <div class="countdown-timer d-flex align-items-center">
+                  <div class="timer-unit">
+                    <span class="unit-label">Days</span>
+                    <span class="unit-value">03</span>
+                  </div>
+                  <span class="timer-separator">:</span>
+                  <div class="timer-unit">
+                    <span class="unit-label">Hours</span>
+                    <span class="unit-value">23</span>
+                  </div>
+                  <span class="timer-separator">:</span>
+                  <div class="timer-unit">
+                    <span class="unit-label">Minutes</span>
+                    <span class="unit-value">19</span>
+                  </div>
+                  <span class="timer-separator">:</span>
+                  <div class="timer-unit">
+                    <span class="unit-label">Seconds</span>
+                    <span class="unit-value">56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-arrows">
+              <button class="nav-arrow prev" aria-label="Previous products">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <button class="nav-arrow next" aria-label="Next products">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Cards Grid -->
+          <div class="product-grid row g-4">
+            <!-- Product Card 1 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="product-card">
+                <div class="card-header">
+                  <span class="discount-tag">-40%</span>
+                  <button
+                    class="wishlist-btn"
+                    aria-label="Add to wishlist"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Add to Wishlist"
+                  >
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-image">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=f-nDXutPaUy7cd9G1MCDeTajw4RED9QdKlRWRN~3tQg8z4puQymrMv57yfN9VyW0JbT52Foj~2PpaH3aTyz8Z0DCdzY~n2Ppa3RICUXXkqNPNTnWxFkCqGBanyVgoZotbQxu~6EhP7s0ch9OlFMd~sxh3lCbf1QoytT-ayqRuzkmM4VL-pTrxUSKOfKfsSdwUbv0xXRu2GkUi2MVhggosrn8fcB2zPkeDQv~JZd-W7FSPCQ-8uL0OV7bJwCu8q7KtAGg7nzdt92dswRqKOwXjfN7mjGO0szxgxpvjItU8DxflebyKsNRh3nLLadCK4Kar2a5h~9em3pzS186LmgWCA__"
+                    alt="HAVIT HV-G92 Gamepad"
+                    class="img-fluid"
+                  />
+                  <button class="quick-view" aria-label="Quick view">
+                    <i class="far fa-eye"></i>
+                  </button>
+                </div>
+                <button
+                  class="add-to-cart-btn"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-title="Add to Cart"
+                >
+                  Add To Cart
+                </button>
+                <div class="product-info">
+                  <h3 class="product-name">HAVIT HV-G92 Gamepad</h3>
+                  <div class="product-price">
+                    <span class="current-price">$120</span>
+                    <span class="original-price">$160</span>
+                  </div>
+                  <div class="product-rating">
+                    <div class="stars" data-rating="5">
+                      <i class="fas fa-star" data-value="1"></i>
+                      <i class="fas fa-star" data-value="2"></i>
+                      <i class="fas fa-star" data-value="3"></i>
+                      <i class="fas fa-star" data-value="4"></i>
+                      <i class="fas fa-star" data-value="5"></i>
+                    </div>
+                    <span class="review-count">(88)</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="product-card">
+                <div class="card-header">
+                  <span class="discount-tag">-35%</span>
+                  <button
+                    class="wishlist-btn"
+                    aria-label="Add to wishlist"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Add to Wishlist"
+                  >
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-image">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/e59d/9f34/8cc24eeff489863523b63971c3ff8e4a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rDHnDBBlqXwilTum9bKzrXjI-G4~yxLxhhhIosvqDlFjmt8BNMDH3myTpmYfYa1714xWj71hOfjgh-u7fVMN9SLSa154qI6r-JSd4JmRrEoya5nhxK86ph8wV0M7MUeA2Yq8zYnOPoKw6jGK4Mqh9x6R-hLj5qTe3LoP4UwyT-vXbXNJeAD1cexfO7e08ui~bzhddridE4FeCEXO1ULCiomIUaYhm2CtBqxxnEss7hkA31N0sX0vPN7r8gDYynCJ7uL6Xgjy0HAIH1GxiksJ-EJMLz-Zfurlr9VAvQylOJYkOuvj2~3ezwGEusSO71htX0pN~9AC8IZRNXhfeLIPnw__"
+                    alt="AK-900 Wired Keyboard"
+                    class="img-fluid"
+                  />
+                  <button class="quick-view" aria-label="Quick view">
+                    <i class="far fa-eye"></i>
+                  </button>
+                </div>
+                <button
+                  class="add-to-cart-btn"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-title="Add to Cart"
+                >
+                  Add To Cart
+                </button>
+                <div class="product-info">
+                  <h3 class="product-name">AK-900 Wired Keyboard</h3>
+                  <div class="product-price">
+                    <span class="current-price">$960</span>
+                    <span class="original-price">$1160</span>
+                  </div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="review-count">(75)</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="product-card">
+                <div class="card-header">
+                  <span class="discount-tag">-30%</span>
+                  <button
+                    class="wishlist-btn"
+                    aria-label="Add to wishlist"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Add to Wishlist"
+                  >
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-image">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/5e63/4682/db5174aff99bb9337d2dc9598a0b44e4?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=No1gx2ZZQpRWeOM-mLkgSsgpufHtCzW2CBQ5R-7psFnSp7WTvT-vkB4IPjf~2emw1qYRpUvjZSgfPm3YpW1Fra37ho2epdWXGnsN07m0vA-BAfXup~JjzyYfbOQTNFXb2viq37pAiuXc7btUWFOpDrlyVRH1HjLAvjszbvsgEprkurvFPxRALEC7ah3RiPf-CSd322ZbmUeOseWo1a5m~k8eKvQBJAfCOvAX81-9uDYkUKwMqpuzigzDzGIJk9eBEtwU3fKbmhTxExgw3zL52oc5NsEZsAKVEdWgFoEn-NZ1EfM999S3nddkVp066MAtn8MEWVHUF4SGo5XCoY3heg__"
+                    alt="IPS LCD Gaming Monitor"
+                    class="img-fluid"
+                  />
+                  <button class="quick-view" aria-label="Quick view">
+                    <i class="far fa-eye"></i>
+                  </button>
+                </div>
+                <button
+                  class="add-to-cart-btn"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-title="Add to Cart"
+                >
+                  Add To Cart
+                </button>
+                <div class="product-info">
+                  <h3 class="product-name">IPS LCD Gaming Monitor</h3>
+                  <div class="product-price">
+                    <span class="current-price">$370</span>
+                    <span class="original-price">$400</span>
+                  </div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <span class="review-count">(99)</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="col-lg-3 col-md-6">
+              <article class="product-card">
+                <div class="card-header">
+                  <span class="discount-tag">-25%</span>
+                  <button
+                    class="wishlist-btn"
+                    aria-label="Add to wishlist"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Add to Wishlist"
+                  >
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-image">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/288d/a330/273c46e1c3dc0a8915c4b031d0345347?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ie7~ysXVkQZFqo~p~Oz7WGZSTJh9EiorH1dJZUbWvLktqIF3PXdBf3zL~qICugSYqwq-oZtNfNStpV1WAIurbND7g7WaT1d7g7wOJo~TBQNUe5GWtRsj9sgHPMlbDSz6~3L7dObcrnBtqq4YXVGDdVdte1-b5LlofWEQSrIDrrPW6ppON~EUPXzDLIflzCjdVJaExqAvdATfo9p5Bi8h5Fq-O-bWYyuolJppy8FPFENxrvElWX2uZfKruj0eJcPfxZKK~YnIDHxDkF5v-LekWvvH8Y3WCVJTRZOuUPrzt-TzL~ySQkuTAuBpltfJuXDKTREKu5DTd2iR61PDETOYYQ__"
+                    alt="S-Series Comfort Chair"
+                    class="img-fluid"
+                  />
+                  <button class="quick-view" aria-label="Quick view">
+                    <i class="far fa-eye"></i>
+                  </button>
+                </div>
+                <button
+                  class="add-to-cart-btn"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-title="Add to Cart"
+                >
+                  Add To Cart
+                </button>
+                <div class="product-info">
+                  <h3 class="product-name">S-Series Comfort Chair</h3>
+                  <div class="product-price">
+                    <span class="current-price">$375</span>
+                    <span class="original-price">$400</span>
+                  </div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="review-count">(99)</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- View All Button -->
+          <div class="text-center mt-5">
+            <button class="view-all-btn">View All Products</button>
+          </div>
+        </section>
       </div>
     </main>
 
