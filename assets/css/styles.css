@@ -1,0 +1,139 @@
+/* Global Styles */
+:root {
+  --primary-color: #1b2e3c;
+  --header-bg: #1b2e3c;
+  --banner-bg: #1b2e3c;
+  --secondary-color: #eda415;
+  --accent-color: #eda415;
+  --success-color: #8fe5b4;
+  --light-text: #ffffff;
+  --dark-text: #292d32;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Promotional Banner */
+.promo-banner {
+  background-color: var(--banner-bg);
+  font-size: 14px;
+}
+
+.promo-banner a {
+  text-decoration: underline;
+}
+
+/* Main Navigation */
+.main-nav {
+  background-color: var(--header-bg);
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Location Selector */
+.location-selector {
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+.location-selector select {
+  color: var(--light-text) !important;
+  font-weight: bold;
+}
+
+.location-selector select option {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+/* Search Container */
+.search-container {
+  max-width: 600px;
+}
+
+.search-container .input-group {
+  background-color: var(--light-text);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.search-container .btn-outline-light {
+  color: var(--dark-text);
+  border: none;
+  background-color: var(--light-text);
+  border-radius: 25px 0 0 25px;
+  padding: 0.5rem 1.5rem;
+}
+
+.search-container .form-control {
+  border: none;
+  box-shadow: none;
+  padding: 0.5rem 1rem;
+}
+
+.search-container .btn-success {
+  background-color: var(--success-color);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  color: var(--dark-text);
+  border-radius: 0 25px 25px 0;
+}
+
+/* User Actions */
+.user-actions {
+  font-size: 14px;
+}
+
+.user-actions .dropdown-toggle::after {
+  vertical-align: middle;
+}
+
+.account-section,
+.orders-section {
+  line-height: 1.2;
+}
+
+.cart-section {
+  font-size: 16px;
+}
+
+.cart-section i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .search-container {
+    order: 3;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .user-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .account-section,
+  .orders-section {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-selector span {
+    display: none;
+  }
+
+  .promo-banner {
+    font-size: 12px;
+  }
+}
