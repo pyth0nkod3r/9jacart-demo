@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Flash Sales Section
-  const flashSalesSection = document.querySelector('.flash-sales');
+  const flashSalesSection = document.querySelector(".flash-sales");
   if (flashSalesSection) {
     // Initialize all interactive features
     initializeTooltips(flashSalesSection);
@@ -302,16 +302,21 @@ document.addEventListener("DOMContentLoaded", function () {
     initializeAddToCart(flashSalesSection);
 
     // Flash Sales Navigation
-    const prevBtn = flashSalesSection.querySelector('.nav-arrow.prev');
-    const nextBtn = flashSalesSection.querySelector('.nav-arrow.next');
-    const productGrid = flashSalesSection.querySelector('.product-grid');
-    const productCards = flashSalesSection.querySelectorAll('.product-card');
+    const prevBtn = flashSalesSection.querySelector(".nav-arrow.prev");
+    const nextBtn = flashSalesSection.querySelector(".nav-arrow.next");
+    const productGrid = flashSalesSection.querySelector(".product-grid");
+    const productCards = flashSalesSection.querySelectorAll(".product-card");
 
     if (prevBtn && nextBtn && productGrid) {
       let currentPage = 0;
-      const productsPerPage = window.innerWidth >= 1200 ? 4 : 
-                            window.innerWidth >= 992 ? 3 :
-                            window.innerWidth >= 768 ? 2 : 1;
+      const productsPerPage =
+        window.innerWidth >= 1200
+          ? 4
+          : window.innerWidth >= 992
+          ? 3
+          : window.innerWidth >= 768
+          ? 2
+          : 1;
       const totalPages = Math.ceil(productCards.length / productsPerPage);
 
       function updateFlashSalesNavigation() {
@@ -319,18 +324,20 @@ document.addEventListener("DOMContentLoaded", function () {
         nextBtn.disabled = currentPage >= totalPages - 1;
 
         // Update grid transform with smooth transition
-        productGrid.style.transform = `translateX(-${currentPage * (100 / productsPerPage)}%)`;
-        productGrid.style.transition = 'transform 0.3s ease';
+        productGrid.style.transform = `translateX(-${
+          currentPage * (100 / productsPerPage)
+        }%)`;
+        productGrid.style.transition = "transform 0.3s ease";
       }
 
-      prevBtn.addEventListener('click', () => {
+      prevBtn.addEventListener("click", () => {
         if (currentPage > 0) {
           currentPage--;
           updateFlashSalesNavigation();
         }
       });
 
-      nextBtn.addEventListener('click', () => {
+      nextBtn.addEventListener("click", () => {
         if (currentPage < totalPages - 1) {
           currentPage++;
           updateFlashSalesNavigation();
@@ -341,10 +348,15 @@ document.addEventListener("DOMContentLoaded", function () {
       updateFlashSalesNavigation();
 
       // Update on window resize
-      window.addEventListener('resize', () => {
-        const newProductsPerPage = window.innerWidth >= 1200 ? 4 : 
-                                 window.innerWidth >= 992 ? 3 :
-                                 window.innerWidth >= 768 ? 2 : 1;
+      window.addEventListener("resize", () => {
+        const newProductsPerPage =
+          window.innerWidth >= 1200
+            ? 4
+            : window.innerWidth >= 992
+            ? 3
+            : window.innerWidth >= 768
+            ? 2
+            : 1;
         if (productsPerPage !== newProductsPerPage) {
           currentPage = 0;
           updateFlashSalesNavigation();
@@ -353,53 +365,57 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Discount Tag Animation
-    const discountTags = flashSalesSection.querySelectorAll('.discount-tag');
-    discountTags.forEach(tag => {
-      tag.classList.add('animate__animated', 'animate__fadeIn');
-      tag.style.animationDuration = '1s';
+    const discountTags = flashSalesSection.querySelectorAll(".discount-tag");
+    discountTags.forEach((tag) => {
+      tag.classList.add("animate__animated", "animate__fadeIn");
+      tag.style.animationDuration = "1s";
     });
 
     // Product Card Hover Effects
-    productCards.forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-5px)';
-        card.style.transition = 'transform 0.3s ease';
+    productCards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        card.style.transform = "translateY(-5px)";
+        card.style.transition = "transform 0.3s ease";
       });
 
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0)';
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "translateY(0)";
       });
     });
 
     // View All Button
-    const viewAllBtn = flashSalesSection.querySelector('.view-all-btn');
+    const viewAllBtn = flashSalesSection.querySelector(".view-all-btn");
     if (viewAllBtn) {
-      viewAllBtn.addEventListener('click', () => {
-        console.log('Navigating to all flash sales products');
+      viewAllBtn.addEventListener("click", () => {
+        console.log("Navigating to all flash sales products");
       });
 
       // Add hover effect
-      viewAllBtn.addEventListener('mouseenter', () => {
-        viewAllBtn.style.transform = 'translateY(-2px)';
-        viewAllBtn.style.transition = 'all 0.3s ease';
+      viewAllBtn.addEventListener("mouseenter", () => {
+        viewAllBtn.style.transform = "translateY(-2px)";
+        viewAllBtn.style.transition = "all 0.3s ease";
       });
 
-      viewAllBtn.addEventListener('mouseleave', () => {
-        viewAllBtn.style.transform = 'translateY(0)';
+      viewAllBtn.addEventListener("mouseleave", () => {
+        viewAllBtn.style.transform = "translateY(0)";
       });
     }
 
     // Flash Sales Timer Update
     function updateFlashSalesTimer() {
-      const timerUnits = flashSalesSection.querySelectorAll('.timer-unit');
-      timerUnits.forEach(unit => {
-        const valueEl = unit.querySelector('.unit-value');
+      const timerUnits = flashSalesSection.querySelectorAll(".timer-unit");
+      timerUnits.forEach((unit) => {
+        const valueEl = unit.querySelector(".unit-value");
         if (valueEl) {
           // Add pulse animation when value changes
-          valueEl.classList.add('animate__animated', 'animate__pulse');
-          valueEl.addEventListener('animationend', () => {
-            valueEl.classList.remove('animate__animated', 'animate__pulse');
-          }, { once: true });
+          valueEl.classList.add("animate__animated", "animate__pulse");
+          valueEl.addEventListener(
+            "animationend",
+            () => {
+              valueEl.classList.remove("animate__animated", "animate__pulse");
+            },
+            { once: true }
+          );
         }
       });
     }
@@ -702,6 +718,66 @@ document.addEventListener("DOMContentLoaded", function () {
       currentCategoryScroll = Math.min(currentCategoryScroll, newMaxScroll);
       categoryWrapper.style.transform = `translateX(-${currentCategoryScroll}px)`;
       updateCategoryNavigation();
+    });
+  }
+
+  // Featured Products Section
+  const featuredSection = document.querySelector(".featured-products");
+  if (featuredSection) {
+    // Initialize hover effects for shop now links
+    const shopNowLinks = featuredSection.querySelectorAll(".shop-now-link");
+    shopNowLinks.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        const arrow = link.querySelector("i");
+        arrow.style.transform = "translateX(5px)";
+      });
+
+      link.addEventListener("mouseleave", () => {
+        const arrow = link.querySelector("i");
+        arrow.style.transform = "translateX(0)";
+      });
+    });
+
+    // Add loading animation for images
+    const productImages = featuredSection.querySelectorAll(".product-img");
+    productImages.forEach((img) => {
+      img.style.opacity = "0";
+      img.style.transition = "opacity 0.5s ease";
+
+      img.addEventListener("load", () => {
+        img.style.opacity = "1";
+      });
+    });
+
+    // Add intersection observer for animation on scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transform = "translateY(0)";
+            entry.target.style.opacity = "1";
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    const featuredCards = featuredSection.querySelectorAll(".featured-card");
+    featuredCards.forEach((card) => {
+      card.style.transform = "translateY(20px)";
+      card.style.opacity = "0";
+      card.style.transition = "transform 0.5s ease, opacity 0.5s ease";
+      observer.observe(card);
+    });
+
+    // Add click handlers for cards
+    featuredCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const productName = card.querySelector("h3").textContent;
+        console.log(`Navigating to ${productName} details page`);
+      });
     });
   }
 });

@@ -1699,3 +1699,250 @@ body {
     max-width: 100%;
   }
 }
+
+/* Featured Products Section */
+.featured-products {
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.featured-header {
+  margin-bottom: 35px;
+}
+
+.featured-header .section-indicator {
+  margin-bottom: 20px;
+}
+
+.featured-header .indicator-bar {
+  width: 8px;
+  height: 30px;
+  background-color: var(--leaf-green);
+  margin-right: 12px;
+  border-radius: 4px;
+}
+
+.featured-header .category-label {
+  color: var(--leaf-green);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.featured-header .section-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.featured-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, brightness 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: scale(1.02);
+  filter: brightness(1.05);
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  color: #fff;
+  z-index: 2;
+}
+
+.card-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: #c5c5c5;
+  margin-bottom: 15px;
+}
+
+.shop-now-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: border-color 0.3s ease;
+}
+
+.shop-now-link i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.shop-now-link:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.shop-now-link:hover i {
+  transform: translateX(5px);
+}
+
+/* PlayStation Card */
+.playstation-card {
+  height: 100%;
+  background-color: #1a2a33;
+}
+
+.playstation-card .product-img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  padding: 40px;
+}
+
+/* Women's Collections Card */
+.womens-card {
+  background-color: #000;
+  height: 250px;
+}
+
+.womens-card .card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.womens-card .card-info {
+  width: 60%;
+  padding: 40px;
+}
+
+.womens-card .product-img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+}
+
+/* Bottom Cards Container */
+.featured-bottom-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Speakers Card */
+.speakers-card {
+  background-color: #212121;
+  height: 250px;
+}
+
+.speakers-card .product-img {
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+/* Perfume Card */
+.perfume-card {
+  background-color: #2a363f;
+  height: 250px;
+}
+
+.perfume-card .product-img {
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-card {
+    height: auto;
+  }
+
+  .playstation-card .product-img {
+    height: 400px;
+  }
+
+  .womens-card {
+    height: 300px;
+  }
+
+  .featured-bottom-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-header .section-title {
+    font-size: 28px;
+  }
+
+  .featured-bottom-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .womens-card .card-info {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .womens-card .product-img {
+    width: 100%;
+  }
+
+  .speakers-card,
+  .perfume-card {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-header .category-label {
+    font-size: 16px;
+  }
+
+  .featured-header .section-title {
+    font-size: 24px;
+  }
+
+  .card-info {
+    padding: 20px;
+  }
+
+  .card-info h3 {
+    font-size: 20px;
+  }
+
+  .playstation-card .product-img {
+    height: 300px;
+  }
+}
