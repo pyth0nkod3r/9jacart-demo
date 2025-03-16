@@ -780,4 +780,101 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  // Main Footer Functionality
+  const mainFooter = document.querySelector(".main-footer");
+  if (mainFooter) {
+    // Email Subscription Form
+    const subscribeForm = mainFooter.querySelector(".subscribe-form");
+    if (subscribeForm) {
+      subscribeForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const emailInput = this.querySelector('input[type="email"]');
+        const email = emailInput.value.trim();
+
+        if (email && isValidEmail(email)) {
+          // Simulate subscription success
+          console.log("Subscribing email:", email);
+          emailInput.value = "";
+
+          // Show success message
+          const successMessage = document.createElement("div");
+          successMessage.className = "alert alert-success mt-2";
+          successMessage.textContent = "Thank you for subscribing!";
+          this.appendChild(successMessage);
+
+          // Remove success message after 3 seconds
+          setTimeout(() => {
+            successMessage.remove();
+          }, 3000);
+        }
+      });
+    }
+
+    // Email validation helper function
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+
+    // Social Media Links
+    const socialLinks = mainFooter.querySelectorAll(".social-links a");
+    socialLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const platform = this.getAttribute("href").replace("#", "");
+        console.log(`Opening ${platform} profile`);
+      });
+    });
+
+    // App Store Buttons
+    const appButtons = mainFooter.querySelectorAll(".app-btn");
+    appButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const store = this.getAttribute("href").replace("#", "");
+        console.log(`Opening ${store} download page`);
+      });
+    });
+
+    // Footer Links Hover Effect
+    const footerLinks = mainFooter.querySelectorAll(".footer-links a");
+    footerLinks.forEach((link) => {
+      link.addEventListener("mouseenter", function () {
+        this.style.paddingLeft = "5px";
+        this.style.transition = "padding-left 0.3s ease";
+      });
+
+      link.addEventListener("mouseleave", function () {
+        this.style.paddingLeft = "0";
+      });
+    });
+
+    // QR Code Loading Animation
+    const qrCode = mainFooter.querySelector(".qr-code img");
+    if (qrCode) {
+      qrCode.style.opacity = "0";
+      qrCode.style.transition = "opacity 0.5s ease";
+
+      qrCode.addEventListener("load", function () {
+        this.style.opacity = "1";
+      });
+    }
+
+    // Smooth Scroll for Footer Links
+    mainFooter.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").slice(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      });
+    });
+  }
 });
