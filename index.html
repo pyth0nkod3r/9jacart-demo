@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -22,6 +27,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
+
   <body>
     <!-- Header Section -->
     <header class="site-header">
@@ -29,7 +35,7 @@
       <div class="announcement-bar">
         <div class="container-fluid">
           <div
-            class="announcement-content d-flex justify-content-between align-items-center"
+            class="d-flex align-items-center justify-content-between announcement-content"
           >
             <div class="flex-grow-1 text-center">
               <span class="announcement-text">
@@ -39,7 +45,7 @@
               </span>
             </div>
             <div class="language-selector">
-              English <i class="fas fa-chevron-down"></i>
+              English <i class="fa-chevron-down fas"></i>
             </div>
           </div>
         </div>
@@ -49,21 +55,32 @@
       <nav class="main-nav">
         <div class="container-fluid">
           <div
-            class="nav-content d-flex align-items-center justify-content-between"
+            class="d-flex nav-content align-items-center justify-content-between"
           >
+            <!-- Add this button before the logo -->
+            <button
+              class="d-md-none navbar-toggler"
+              type="button"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-bars fas"></i>
+            </button>
             <!-- Logo -->
             <a href="#" class="logo">
-              <!-- <img src="http://s3-alpha-sig.figma.com/img/f1e5/0dd7/484f5f022429060a671b8df2f1fc9455?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RjAiCHjgVBvEqKdds45-oBvTwJLONq-QN-VZxYrK86GLxcYM8EAzrC2egiQJHMJIh62aHHtmPCUP1Qqoz9ZJNZXluFautbgSDiVWhEgE5VE7ChNlRIecWnnLGrr3oOhnZe8kUcs03GZcbPRhxjdxMA2l-OgFXXKHFqCaQN4ssk4jMvb3Ya90BkB5aJS9hPtHx3miBuWajeX2twNTcj3tpbQutjx89PMK9neQVVw5sSTug3EECPSZuol4M~diaHncWsmkHGX9WnhrabRng7n7P6bXRnWIoX3xIO3mxverYZdLSwZq8PL3kQ035f8FKVKqeTwrkHImrnGKC4tnF-J3bw__" alt="9jacart Logo"> -->
-              <i class="fas fa-leaf"></i>
-              <span class="logo-text">
-                <span class="nine">9ja</span>
-                <span class="cart">-cart</span>
-              </span>
+              <img
+                class="navbar-logo-image"
+                src="assets/img/logo.png"
+                alt="9jacart Logo"
+              />
+              <!-- <span class="logo-text">
+                                <span class="nine">9ja</span>
+                                <span class="cart">-cart</span>
+                            </span> -->
             </a>
 
             <!-- Delivery Location -->
             <div class="delivery-location">
-              <i class="fas fa-map-marker-alt"></i>
+              <i class="fa-map-marker-alt fas"></i>
               <div class="location-text">
                 <span class="deliver-to">Deliver to</span>
                 <span class="country">Nigeria</span>
@@ -71,10 +88,10 @@
             </div>
 
             <!-- Search Bar -->
-            <div class="search-container flex-grow-1">
+            <div class="flex-grow-1 search-container">
               <div class="search-bar">
                 <button class="category-dropdown">
-                  All <i class="fas fa-chevron-down"></i>
+                  All <i class="fa-chevron-down fas"></i>
                 </button>
                 <input
                   type="text"
@@ -82,7 +99,7 @@
                   class="search-input"
                 />
                 <button type="submit" class="search-button">
-                  <i class="fas fa-search"></i>
+                  <i class="fa-search fas"></i>
                 </button>
               </div>
             </div>
@@ -103,13 +120,13 @@
 
             <!-- Cart -->
             <div class="cart-section">
-              <i class="fas fa-shopping-cart"></i>
+              <i class="fa-shopping-cart fas"></i>
               <span>Cart</span>
             </div>
 
             <!-- Language Selector -->
             <div class="nav-language-selector">
-              EN <i class="fas fa-chevron-down"></i>
+              EN <i class="fa-chevron-down fas"></i>
             </div>
           </div>
         </div>
@@ -119,80 +136,78 @@
     <!-- Main Content Section -->
     <main class="main-content">
       <div class="container-fluid">
-        <div class="row">
-          <!-- Sidebar Navigation -->
-          <aside class="col-md-3 sidebar-nav">
-            <nav class="nav-menu">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Appliances</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Baby Products</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="#"
-                    class="nav-link d-flex justify-content-between align-items-center"
-                  >
-                    Device & Accessories
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Groceries</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Health</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Laundry</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="#"
-                    class="nav-link d-flex justify-content-between align-items-center"
-                  >
-                    Men's Fashion
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Travel & Tours</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Uber / Bolt</a>
-                </li>
-              </ul>
-            </nav>
-          </aside>
+        <!-- Hero Section -->
+        <section class="hero">
+          <hr />
+          <div class="row">
+            <!-- Sidebar Navigation -->
+            <aside class="col-md-3 sidebar-nav">
+              <nav class="nav-menu">
+                <ul class="flex-column nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Appliances</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Baby Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="d-flex nav-link align-items-center justify-content-between"
+                    >
+                      Device & Accessories
+                      <i class="fa-chevron-right fas"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Groceries</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Health</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Laundry</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="d-flex nav-link align-items-center justify-content-between"
+                    >
+                      Men's Fashion
+                      <i class="fa-chevron-right fas"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Travel & Tours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Uber / Bolt</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
 
-          <!-- Main Banner -->
-          <div class="col-md-9">
-            <div class="main-banner">
+            <!-- Main Banner -->
+            <div class="col-md-9 main-banner">
               <div class="banner-content">
-                <!-- Left Section -->
                 <div class="banner-left">
-                  <i class="fab fa-apple"></i>
-                  <p class="device-series">iPhone 14 Series</p>
-                  <h2 class="banner-heading">Up to 10% off Voucher</h2>
+                  <i class="fa-apple fab"></i>
+                  <div class="device-series">iPhone 14 Series</div>
+                  <h1 class="banner-heading">Up to 10% off Voucher</h1>
                   <a href="#" class="shop-now-link">
-                    Shop Now
-                    <i class="fas fa-arrow-right"></i>
+                    Shop Now <i class="fa-arrow-right fas"></i>
                   </a>
                 </div>
-                <!-- Right Section -->
                 <div class="banner-right">
                   <img
-                    src="https://s3-alpha-sig.figma.com/img/dc40/ba89/7215f42e5883a64157f0aa3a4d1a866a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=byS5o5aU8BrcLW-Y0wu8VT7YwD04~INxq2Exx59oe4tuz68V~nuGryrDAwwdaSH5lQ~UliH6sHOqiLfX5UxOFHfBc1as87-QIR3Thaz~Tzbczq9XHzHquzWtGjuGZEMwxgxQHSSleOqJ5WeOOATWHbg~6SgdZrPhm7yB1EA6O5GtCU6gvscncKgE7JWDoAyQhgmLKRFBIFFQwCQeRdspu9mGHX61SZM1JFJ9eGc4DBA7aEwTYJ2u4Sddb7nLEnRClSMB-3J5yhV-jEQeE~6JOOWRrVJBRs5v~W9Fay0ohtbgKm2mUnCdg0gFg0HMqwXQB5Gvp7HRnxnZNNC1ZrfPqA__"
-                    alt="iPhone 14 Pro"
+                    src="assets/img/hero-img.jpeg"
+                    alt="iPhone 14"
                     class="banner-image"
                   />
                 </div>
               </div>
-              <!-- Banner Navigation Dots -->
               <div class="banner-dots">
-                <span class="dot active"></span>
+                <span class="active dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -200,22 +215,22 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- Flash Sales Section -->
         <section class="flash-sales">
           <div
-            class="flash-sales-header d-flex align-items-center justify-content-between"
+            class="d-flex align-items-center justify-content-between flash-sales-header"
           >
             <div class="header-left">
-              <div class="section-indicator d-flex align-items-center">
+              <div class="d-flex align-items-center section-indicator">
                 <span class="indicator-bar"></span>
                 <h3 class="today-text">Today's</h3>
               </div>
               <div class="d-flex align-items-center gap-4">
                 <h2 class="section-title">Flash Sales</h2>
                 <!-- Countdown Timer -->
-                <div class="countdown-timer d-flex align-items-center">
+                <div class="d-flex align-items-center countdown-timer">
                   <div class="timer-unit">
                     <span class="unit-label">Days</span>
                     <span class="unit-value">03</span>
@@ -240,16 +255,16 @@
             </div>
             <div class="navigation-arrows">
               <button class="nav-arrow prev" aria-label="Previous products">
-                <i class="fas fa-arrow-left"></i>
+                <i class="fa-arrow-left fas"></i>
               </button>
               <button class="nav-arrow next" aria-label="Next products">
-                <i class="fas fa-arrow-right"></i>
+                <i class="fa-arrow-right fas"></i>
               </button>
             </div>
           </div>
 
           <!-- Product Cards Grid -->
-          <div class="product-grid row g-4">
+          <div class="g-4 row product-grid">
             <!-- Product Card 1 -->
             <div class="col-lg-3 col-md-6">
               <article class="product-card">
@@ -262,7 +277,7 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                 </div>
                 <div class="product-image">
@@ -272,17 +287,17 @@
                     class="img-fluid"
                   />
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
+                  </button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Add to Cart"
+                  >
+                    Add To Cart
                   </button>
                 </div>
-                <button
-                  class="add-to-cart-btn"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  data-bs-title="Add to Cart"
-                >
-                  Add To Cart
-                </button>
                 <div class="product-info">
                   <h3 class="product-name">HAVIT HV-G92 Gamepad</h3>
                   <div class="product-price">
@@ -291,11 +306,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars" data-rating="5">
-                      <i class="fas fa-star" data-value="1"></i>
-                      <i class="fas fa-star" data-value="2"></i>
-                      <i class="fas fa-star" data-value="3"></i>
-                      <i class="fas fa-star" data-value="4"></i>
-                      <i class="fas fa-star" data-value="5"></i>
+                      <i class="fa-star fas" data-value="1"></i>
+                      <i class="fa-star fas" data-value="2"></i>
+                      <i class="fa-star fas" data-value="3"></i>
+                      <i class="fa-star fas" data-value="4"></i>
+                      <i class="fa-star fas" data-value="5"></i>
                     </div>
                     <span class="review-count">(88)</span>
                   </div>
@@ -315,7 +330,7 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                 </div>
                 <div class="product-image">
@@ -325,17 +340,17 @@
                     class="img-fluid"
                   />
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
+                  </button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Add to Cart"
+                  >
+                    Add To Cart
                   </button>
                 </div>
-                <button
-                  class="add-to-cart-btn"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  data-bs-title="Add to Cart"
-                >
-                  Add To Cart
-                </button>
                 <div class="product-info">
                   <h3 class="product-name">AK-900 Wired Keyboard</h3>
                   <div class="product-price">
@@ -344,11 +359,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star far"></i>
                     </div>
                     <span class="review-count">(75)</span>
                   </div>
@@ -368,7 +383,7 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                 </div>
                 <div class="product-image">
@@ -378,17 +393,17 @@
                     class="img-fluid"
                   />
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
+                  </button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Add to Cart"
+                  >
+                    Add To Cart
                   </button>
                 </div>
-                <button
-                  class="add-to-cart-btn"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  data-bs-title="Add to Cart"
-                >
-                  Add To Cart
-                </button>
                 <div class="product-info">
                   <h3 class="product-name">IPS LCD Gaming Monitor</h3>
                   <div class="product-price">
@@ -397,11 +412,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
                     </div>
                     <span class="review-count">(99)</span>
                   </div>
@@ -421,7 +436,7 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                 </div>
                 <div class="product-image">
@@ -431,17 +446,17 @@
                     class="img-fluid"
                   />
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
+                  </button>
+                  <button
+                    class="add-to-cart-btn"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Add to Cart"
+                  >
+                    Add To Cart
                   </button>
                 </div>
-                <button
-                  class="add-to-cart-btn"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  data-bs-title="Add to Cart"
-                >
-                  Add To Cart
-                </button>
                 <div class="product-info">
                   <h3 class="product-name">S-Series Comfort Chair</h3>
                   <div class="product-price">
@@ -450,11 +465,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star-half-alt fas"></i>
                     </div>
                     <span class="review-count">(99)</span>
                   </div>
@@ -469,77 +484,47 @@
           </div>
         </section>
 
-        <!-- Category Browsing Section -->
+        <!-- Category Browse Section -->
         <section class="category-browse">
-          <div
-            class="section-header d-flex align-items-center justify-content-between"
-          >
-            <div class="header-left">
-              <div class="section-indicator d-flex align-items-center">
-                <span class="indicator-bar"></span>
-                <h3 class="category-label">Categories</h3>
-              </div>
-              <h2 class="section-title">Browse By Category</h2>
+          <div class="category-header">
+            <div class="category-title">
+              <div class="indicator-bar"></div>
+              <h2>Browse By Category</h2>
             </div>
             <div class="navigation-arrows">
-              <button class="nav-arrow prev" aria-label="Previous categories">
-                <i class="fas fa-arrow-left"></i>
+              <button class="nav-arrow prev">
+                <i class="fa-chevron-left fas"></i>
               </button>
-              <button class="nav-arrow next" aria-label="Next categories">
-                <i class="fas fa-arrow-right"></i>
+              <button class="nav-arrow next">
+                <i class="fa-chevron-right fas"></i>
               </button>
             </div>
           </div>
 
-          <div class="categories-container">
-            <div class="categories-wrapper">
-              <!-- Category Card 1 -->
-              <article class="category-card">
-                <div class="icon-wrapper">
-                  <i class="far fa-mobile-android"></i>
-                </div>
-                <h3 class="category-name">Phones</h3>
-              </article>
-
-              <!-- Category Card 2 -->
-              <article class="category-card">
-                <div class="icon-wrapper">
-                  <i class="far fa-desktop"></i>
-                </div>
-                <h3 class="category-name">Computers</h3>
-              </article>
-
-              <!-- Category Card 3 -->
-              <article class="category-card">
-                <div class="icon-wrapper">
-                  <i class="far fa-watch-smart"></i>
-                </div>
-                <h3 class="category-name">SmartWatch</h3>
-              </article>
-
-              <!-- Category Card 4 -->
-              <article class="category-card active">
-                <div class="icon-wrapper">
-                  <i class="far fa-camera"></i>
-                </div>
-                <h3 class="category-name">Camera</h3>
-              </article>
-
-              <!-- Category Card 5 -->
-              <article class="category-card">
-                <div class="icon-wrapper">
-                  <i class="far fa-headphones"></i>
-                </div>
-                <h3 class="category-name">HeadPhones</h3>
-              </article>
-
-              <!-- Category Card 6 -->
-              <article class="category-card">
-                <div class="icon-wrapper">
-                  <i class="far fa-gamepad"></i>
-                </div>
-                <h3 class="category-name">Gaming</h3>
-              </article>
+          <div class="category-grid">
+            <div class="category-card">
+              <i class="category-icon fa-mobile-alt fas"></i>
+              <h3 class="category-name">Phones</h3>
+            </div>
+            <div class="category-card">
+              <i class="category-icon fa-desktop fas"></i>
+              <h3 class="category-name">Computers</h3>
+            </div>
+            <div class="category-card">
+              <i class="category-icon fa-watch fas"></i>
+              <h3 class="category-name">SmartWatch</h3>
+            </div>
+            <div class="active category-card">
+              <i class="category-icon fa-camera fas"></i>
+              <h3 class="category-name">Camera</h3>
+            </div>
+            <div class="category-card">
+              <i class="category-icon fa-headphones fas"></i>
+              <h3 class="category-name">HeadPhones</h3>
+            </div>
+            <div class="category-card">
+              <i class="category-icon fa-gamepad fas"></i>
+              <h3 class="category-name">Gaming</h3>
             </div>
           </div>
         </section>
@@ -547,10 +532,10 @@
         <!-- Best Selling Products Section -->
         <section class="best-selling">
           <div
-            class="section-header d-flex align-items-center justify-content-between"
+            class="d-flex align-items-center justify-content-between section-header"
           >
             <div class="header-left">
-              <div class="section-indicator d-flex align-items-center">
+              <div class="d-flex align-items-center section-indicator">
                 <span class="indicator-bar"></span>
                 <h3 class="month-text">This Month</h3>
               </div>
@@ -564,7 +549,7 @@
             >
           </div>
 
-          <div class="product-grid row g-4">
+          <div class="g-4 row product-grid">
             <!-- Product Card 1 -->
             <div class="col-lg-3 col-md-6">
               <article class="product-card">
@@ -581,10 +566,10 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
                   </button>
                 </div>
                 <div class="product-info">
@@ -595,11 +580,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars" data-rating="5">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
                     </div>
                     <span class="review-count">(65)</span>
                   </div>
@@ -623,10 +608,10 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
                   </button>
                 </div>
                 <div class="product-info">
@@ -637,11 +622,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars" data-rating="5">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
                     </div>
                     <span class="review-count">(65)</span>
                   </div>
@@ -665,10 +650,10 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
                   </button>
                 </div>
                 <div class="product-info">
@@ -679,11 +664,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars" data-rating="5">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
                     </div>
                     <span class="review-count">(65)</span>
                   </div>
@@ -707,10 +692,10 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="far fa-heart"></i>
+                    <i class="fa-heart far"></i>
                   </button>
                   <button class="quick-view" aria-label="Quick view">
-                    <i class="far fa-eye"></i>
+                    <i class="fa-eye far"></i>
                   </button>
                 </div>
                 <div class="product-info">
@@ -720,11 +705,11 @@
                   </div>
                   <div class="product-rating">
                     <div class="stars" data-rating="5">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
+                      <i class="fa-star fas"></i>
                     </div>
                     <span class="review-count">(65)</span>
                   </div>
@@ -745,34 +730,30 @@
                 <!-- Countdown Timer -->
                 <div class="countdown-circles" aria-label="Offer ends in">
                   <div class="timer-circle">
-                    <span class="number" data-days>23</span>
+                    <span class="number">23</span>
                     <span class="label">Hours</span>
                   </div>
                   <div class="timer-circle">
-                    <span class="number" data-hours>05</span>
+                    <span class="number">05</span>
                     <span class="label">Days</span>
                   </div>
                   <div class="timer-circle">
-                    <span class="number" data-minutes>59</span>
+                    <span class="number">59</span>
                     <span class="label">Minutes</span>
                   </div>
                   <div class="timer-circle">
-                    <span class="number" data-seconds>35</span>
+                    <span class="number">35</span>
                     <span class="label">Seconds</span>
                   </div>
                 </div>
-                <a
-                  href="#"
-                  class="buy-now-btn"
-                  aria-label="Buy JBL Boombox Now"
+                <a href="#" class="buy-now-btn" aria-label="Buy JBL Boombox Now"
+                  >Buy Now!</a
                 >
-                  Buy Now!
-                </a>
               </div>
               <!-- Right Content - Product Image -->
               <div class="promo-image">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/3cc9/43ca/7e210f637fc0504b7d93cd207df744c2?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fthpzzZnfNcDmfUn659uz5OL8z9dIa7B2GgnbjGQzo8C51TFo-c3ZdUVa~R98E8rWo1mFR0PJWKA~rFYIqZ6Z8F54Bkv7y-VRs7QtrOP7~Yz2GFR-Z66555tcd868VS~-1r3Fe0ox~8G-PdtnX--9MeWY5cSf940Av8gJ-ZZzH~tYVBeC1YGEn8giW2LGd9lQkJ5x76VBzdlRSlWlMk5lBNKz7WJwoBIpe8P7au2kxKwrr6ONHvesijwsLZDRFrvaqCmHOD17vmPoDOiEHL-FOY7AJatRVARWQ1aMJQdonjTlGK601GbnWGxGxjo-64zHB1b7HaVTyu2oHzdyWMpsg__"
+                  src="assets/img/jbl music box.png"
                   alt="JBL Boombox Portable Speaker"
                   class="product-img"
                 />
@@ -786,10 +767,10 @@
           <div class="container-fluid">
             <!-- Header Section -->
             <header
-              class="section-header d-flex align-items-center justify-content-between"
+              class="d-flex align-items-center justify-content-between section-header"
             >
               <div class="header-left">
-                <div class="section-indicator d-flex align-items-center">
+                <div class="d-flex align-items-center section-indicator">
                   <span class="indicator-bar"></span>
                   <h3 class="category-label">Our Products</h3>
                 </div>
@@ -800,10 +781,10 @@
                       class="nav-arrow prev"
                       aria-label="Previous products"
                     >
-                      <i class="fas fa-arrow-left"></i>
+                      <i class="fa-arrow-left fas"></i>
                     </button>
                     <button class="nav-arrow next" aria-label="Next products">
-                      <i class="fas fa-arrow-right"></i>
+                      <i class="fa-arrow-right fas"></i>
                     </button>
                   </div>
                 </div>
@@ -811,9 +792,9 @@
             </header>
 
             <!-- Product Grid -->
-            <div class="product-grid row g-4">
+            <div class="g-4 row product-grid">
               <!-- Product 1: Breed Dry Dog Food -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <img
@@ -828,10 +809,18 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
+                    </button>
+                    <button
+                      class="add-to-cart-btn"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Add to Cart"
+                    >
+                      Add To Cart
                     </button>
                   </div>
                   <div class="product-info">
@@ -841,11 +830,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star far"></i>
                       </div>
                       <span class="review-count">(35)</span>
                     </div>
@@ -854,7 +843,7 @@
               </div>
 
               <!-- Product 2: CANON EOS DSLR Camera -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <img
@@ -869,10 +858,10 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
                     </button>
                     <button
                       class="add-to-cart-btn"
@@ -890,11 +879,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="4.5">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star-half-alt fas"></i>
                       </div>
                       <span class="review-count">(95)</span>
                     </div>
@@ -903,7 +892,7 @@
               </div>
 
               <!-- Product 3: ASUS FHD Gaming Laptop -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <img
@@ -918,10 +907,18 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
+                    </button>
+                    <button
+                      class="add-to-cart-btn"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Add to Cart"
+                    >
+                      Add To Cart
                     </button>
                   </div>
                   <div class="product-info">
@@ -931,11 +928,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="5">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
                       </div>
                       <span class="review-count">(325)</span>
                     </div>
@@ -944,7 +941,7 @@
               </div>
 
               <!-- Product 4: Curology Product Set -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <img
@@ -959,10 +956,18 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
+                    </button>
+                    <button
+                      class="add-to-cart-btn"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Add to Cart"
+                    >
+                      Add To Cart
                     </button>
                   </div>
                   <div class="product-info">
@@ -972,11 +977,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star far"></i>
                       </div>
                       <span class="review-count">(145)</span>
                     </div>
@@ -985,7 +990,7 @@
               </div>
 
               <!-- Product 5: Kids Electric Car -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <span class="new-tag">NEW</span>
@@ -1001,10 +1006,10 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
                     </button>
                   </div>
                   <div class="product-info">
@@ -1014,11 +1019,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="5">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
                       </div>
                       <span class="review-count">(65)</span>
                     </div>
@@ -1039,7 +1044,7 @@
               </div>
 
               <!-- Product 6: Jr. Zoom Soccer Cleats -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <img
@@ -1054,10 +1059,10 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
                     </button>
                   </div>
                   <div class="product-info">
@@ -1067,11 +1072,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="4.5">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star-half-alt fas"></i>
                       </div>
                       <span class="review-count">(35)</span>
                     </div>
@@ -1092,7 +1097,7 @@
               </div>
 
               <!-- Product 7: GP11 Shooter USB Gamepad -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <span class="new-tag">NEW</span>
@@ -1108,10 +1113,10 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
                     </button>
                   </div>
                   <div class="product-info">
@@ -1121,11 +1126,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="5">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
                       </div>
                       <span class="review-count">(55)</span>
                     </div>
@@ -1146,7 +1151,7 @@
               </div>
 
               <!-- Product 8: Quilted Satin Jacket -->
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 col-xl-3">
                 <article class="product-card">
                   <div class="product-image">
                     <img
@@ -1161,10 +1166,10 @@
                       data-bs-placement="left"
                       data-bs-title="Add to Wishlist"
                     >
-                      <i class="far fa-heart"></i>
+                      <i class="fa-heart far"></i>
                     </button>
                     <button class="quick-view" aria-label="Quick view">
-                      <i class="far fa-eye"></i>
+                      <i class="fa-eye far"></i>
                     </button>
                   </div>
                   <div class="product-info">
@@ -1174,11 +1179,11 @@
                     </div>
                     <div class="product-rating">
                       <div class="stars" data-rating="4.5">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star fas"></i>
+                        <i class="fa-star-half-alt fas"></i>
                       </div>
                       <span class="review-count">(55)</span>
                     </div>
@@ -1211,7 +1216,7 @@
           <div class="container-fluid">
             <!-- Section Header -->
             <header class="featured-header">
-              <div class="section-indicator d-flex align-items-center">
+              <div class="section-indicator">
                 <span class="indicator-bar"></span>
                 <h3 class="category-label">Featured</h3>
               </div>
@@ -1224,9 +1229,9 @@
               <article class="featured-card playstation-card">
                 <div class="card-content">
                   <img
-                    src="https://s3-alpha-sig.figma.com/img/1c36/0f79/0c1817d3afa266b3c9f8c81ff0ed4428?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uUNNZdWzs6-KFc4OOrL~T0ouMH4gFjbetO8QY3yEpSOi-c2BRTvE8gukRETcWS8-p3sxI28q7FIMzPhGEqaaxRMaCeiij2LVjldXRWqLHlL3vUcWNbuVIEFYsAHXHi9AaZIsBUHIRYMWUVqvhcl3GaeXljNHB~fM-cZ3lIk0SrPuWvvHePYelY8NIBQsezCLSMsWoVr1nEN6bIg6tDzrwNvuUdN35K-uf0YLhKA9DFzXa55T07qEaiwP1P3dKCM8EeEAuZOiMAI0YatJT2lPj4-Pc-boTBTDLUZXcHYSoSQxTG0jfUuH0UWgszrQOkaDLpOTHX44CyiIhjh1Raq8dA__"
-                    alt="Black and White PlayStation 5 Consoles"
-                    class="product-img"
+                    src="assets/img/play station 5.png"
+                    alt="PlayStation 5 Console"
+                    class="img-fluid"
                   />
                   <div class="card-info">
                     <h3>PlayStation 5</h3>
@@ -1235,17 +1240,22 @@
                     </p>
                     <a href="#" class="shop-now-link">
                       Shop Now
-                      <i class="fas fa-arrow-right"></i>
+                      <i class="fa-arrow-right fas"></i>
                     </a>
                   </div>
                 </div>
               </article>
 
-              <!-- Right Column Cards -->
-              <div class="featured-right-column">
+              <!-- Right Column -->
+              <div class="right-column">
                 <!-- Women's Collections Card -->
-                <article class="featured-card womens-card">
+                <article class="featured-card womens-collections-card">
                   <div class="card-content">
+                    <img
+                      src="assets/img/womens collection.jpeg"
+                      alt="Women's Collections"
+                      class="img-fluid"
+                    />
                     <div class="card-info">
                       <h3>Women's Collections</h3>
                       <p>
@@ -1253,33 +1263,28 @@
                       </p>
                       <a href="#" class="shop-now-link">
                         Shop Now
-                        <i class="fas fa-arrow-right"></i>
+                        <i class="fa-arrow-right fas"></i>
                       </a>
                     </div>
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/455c/8d64/08463f7e8f57dd3048a2444dbfa0cb90?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MWpAZ4hUbX6fsjLCGiGHsMJMjY2r6v0NtcZkmWNRfyjnd6GSojT7ZpY8yiWwtjTDpLNMMd9HWq94ZCDwxlnEuI9hotTw8X7F8vRQl1j78Y-eTLeFWw5axLAM-HXMO-XpjJQg25455hNbrvyFaivN5X6Kp5xdBQlW6Rd~QrJrX5-yGA-aeARgBFRF9BMQYO9d-Zizln5DPkDc5GZGWISxVQ~T8ECpOY39YmnqmgNTkyXbSaWX5YG3paBjcoZgjgTuhKzGV6zB2THU1a1T-FmoUCXNuXDKxKxXeIWOSM7YWBpdtQC594cPYMWSiMs81rSF4bfJuN6S6d4KpICR8iG4Yw__"
-                      alt="Woman in black hat and elegant pose"
-                      class="product-img"
-                    />
                   </div>
                 </article>
 
-                <!-- Bottom Cards Container -->
-                <div class="featured-bottom-cards">
+                <!-- Bottom Row -->
+                <div class="bottom-row">
                   <!-- Speakers Card -->
                   <article class="featured-card speakers-card">
                     <div class="card-content">
                       <img
-                        src="https://s3-alpha-sig.figma.com/img/e565/9d57/2977438364a41d7e8c9d1e9a794d43ed?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZAYnr8rr6mHUNu9zXJLUDlcUu2-2Z47GuEbktsOt2lbCwP-wQOL7Fx~yhT-bvqQu4j-dDekHAx3Lh~xQWFPvkJrwbNdok~roSFd4tpXk~vUE9FGJR3bg-1rzFyfaNv3yqhiHipQ7KQvMzv-dQ1IdjtlaYGmS1wgL~8P0VT1TLphsvOPrw47bD5~mG5Hcp9zwWXu8H6fBjOV-Qq15KRO~8k2FHfm86VMAaQ0Zzpwnt8PaW7L0-e2paXRyRaKQylhydPZuizSeXZ7y1U1AUauhTIBoH-rOJtw52gUIP-LnzT9XAuffRPhBajPcJN5mNpVcN30-aUZNzMvkP4BY-QlmIg__"
-                        alt="Amazon Echo smart speakers collection"
-                        class="product-img"
+                        src="assets/img/amazon speakers.png"
+                        alt="Amazon Speakers"
+                        class="img-fluid"
                       />
                       <div class="card-info">
                         <h3>Speakers</h3>
                         <p>Amazon wireless speakers</p>
                         <a href="#" class="shop-now-link">
                           Shop Now
-                          <i class="fas fa-arrow-right"></i>
+                          <i class="fa-arrow-right fas"></i>
                         </a>
                       </div>
                     </div>
@@ -1289,16 +1294,16 @@
                   <article class="featured-card perfume-card">
                     <div class="card-content">
                       <img
-                        src="https://s3-alpha-sig.figma.com/img/1531/5cd1/5102562cf220504d288fa568eaa816dd?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZWHFWtgU-FjOxn2r2RU4s11gmegNcOMokAMgMnJyiYBCYrW6KVAee-rfM53GXYKP3p7yN9iOQiNNT96pRG6~wnxY31Nk~nVQ00Ixz5J2TkKdlZCg7Jr-cz~KgYJkqrwvvA7HhohNiRxSQ9slw6dvqVDnqLDYtLykCIeLLUr4Em9-J25h45FfsscNW2dG9YBqpIJAtAjlLW-bPskkCOOQQSzPUbVbnlVsjybqByszhSvIUH8oDzmm9gbfO3Ra3vT9PKfR4swjRaG2lP3j~bFi5w7AFHVtoz~DmJPZSyRit4YpW4KH2YIsULms1v9l5PZjrwKZJ~W2XJtrchkg-42FXA__"
-                        alt="Gucci Intense Oud EDP Perfume"
-                        class="product-img"
+                        src="assets/img/perfume.png"
+                        alt="Gucci Intense Oud Perfume"
+                        class="img-fluid"
                       />
                       <div class="card-info">
                         <h3>Perfume</h3>
                         <p>GUCCI INTENSE OUD EDP</p>
                         <a href="#" class="shop-now-link">
                           Shop Now
-                          <i class="fas fa-arrow-right"></i>
+                          <i class="fa-arrow-right fas"></i>
                         </a>
                       </div>
                     </div>
@@ -1310,67 +1315,35 @@
         </section>
 
         <!-- Services Banner Section -->
-        <section class="services-banner" aria-label="Our Services">
+        <section class="services-banner">
           <div class="container-fluid">
-            <div class="row g-4">
-              <!-- Free Delivery Service -->
-              <div class="col-lg-4 col-md-4">
-                <article class="service-item">
-                  <figure class="service-icon">
-                    <div class="icon-wrapper">
-                      <i class="fas fa-truck"></i>
-                    </div>
-                    <figcaption class="visually-hidden">
-                      Free Delivery Icon
-                    </figcaption>
-                  </figure>
-                  <div class="service-content">
-                    <h3 class="service-title">FREE AND FAST DELIVERY</h3>
-                    <p class="service-description">
-                      Free delivery for all orders over $140
-                    </p>
-                  </div>
-                </article>
+            <div class="services-grid">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="fa-truck fas"></i>
+                </div>
+                <h3 class="service-title">FREE AND FAST DELIVERY</h3>
+                <p class="service-description">
+                  Free delivery for all orders over $140
+                </p>
               </div>
 
-              <!-- Customer Service -->
-              <div class="col-lg-4 col-md-4">
-                <article class="service-item">
-                  <figure class="service-icon">
-                    <div class="icon-wrapper">
-                      <i class="fas fa-headset"></i>
-                    </div>
-                    <figcaption class="visually-hidden">
-                      Customer Service Icon
-                    </figcaption>
-                  </figure>
-                  <div class="service-content">
-                    <h3 class="service-title">24/7 CUSTOMER SERVICE</h3>
-                    <p class="service-description">
-                      Friendly 24/7 customer support
-                    </p>
-                  </div>
-                </article>
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="fa-headset fas"></i>
+                </div>
+                <h3 class="service-title">24/7 CUSTOMER SERVICE</h3>
+                <p class="service-description">
+                  Friendly 24/7 customer support
+                </p>
               </div>
 
-              <!-- Money Back Guarantee -->
-              <div class="col-lg-4 col-md-4">
-                <article class="service-item">
-                  <figure class="service-icon">
-                    <div class="icon-wrapper">
-                      <i class="fas fa-shield-check"></i>
-                    </div>
-                    <figcaption class="visually-hidden">
-                      Money Back Guarantee Icon
-                    </figcaption>
-                  </figure>
-                  <div class="service-content">
-                    <h3 class="service-title">MONEY BACK GUARANTEE</h3>
-                    <p class="service-description">
-                      We return money within 30 days
-                    </p>
-                  </div>
-                </article>
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="fa-shield-alt fas"></i>
+                </div>
+                <h3 class="service-title">MONEY BACK GUARANTEE</h3>
+                <p class="service-description">We reurn money within 30 days</p>
               </div>
             </div>
           </div>
@@ -1378,112 +1351,80 @@
       </div>
     </main>
 
-    <!-- Secondary Footer Section -->
-    <footer class="secondary-footer" aria-label="Additional Site Information">
-      <div class="container">
-        <div class="row g-4">
-          <!-- Know Us More Column -->
-          <div class="col-md-3">
-            <nav class="footer-nav" aria-label="About Company Navigation">
-              <h4 class="footer-heading">Know Us More</h4>
-              <ul class="footer-links">
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#terms">Terms & Conditions (T's & C's)</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+    <!-- Secondary Footer -->
+    <footer class="secondary-footer">
+      <div class="container-fluid">
+        <div class="footer-content">
+          <!-- Know Us More -->
+          <div class="footer-column">
+            <h3>Know Us More</h3>
+            <ul class="footer-links">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms & Conditions (T's & C's)</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
 
-          <!-- Make Money With Us Column -->
-          <div class="col-md-3">
-            <nav
-              class="footer-nav"
-              aria-label="Business Opportunities Navigation"
-            >
-              <h4 class="footer-heading">Make Money With Us</h4>
-              <ul class="footer-links">
-                <li><a href="#sell">Sell Products on 9Jacart</a></li>
-                <li><a href="#advertise">Advertise Your Product</a></li>
-                <li><a href="#affiliate">Become an Affiliate</a></li>
-              </ul>
-            </nav>
+          <!-- Make Money With Us -->
+          <div class="footer-column">
+            <h3>Make Money With Us</h3>
+            <ul class="footer-links">
+              <li><a href="#">Sell Products on 9Jacart</a></li>
+              <li><a href="#">Advertise Your Product</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+            </ul>
           </div>
 
-          <!-- Payment Options Column -->
-          <div class="col-md-3">
-            <nav class="footer-nav" aria-label="Payment Options Navigation">
-              <h4 class="footer-heading">9Jacart Payment Options</h4>
-              <ul class="footer-links">
-                <li>
-                  <a href="#bank-payments">
-                    <span>Bank Payments</span>
-                    <span class="payment-info">(Visa, MasterCard)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#bnpl">
-                    <span>Buy Now, Pay Later</span>
-                    <span class="payment-info">(BNPL)</span>
-                  </a>
-                </li>
-                <li><a href="#pod">Pay on Delivery</a></li>
-                <li><a href="#credit">Emergency Credit</a></li>
-              </ul>
-            </nav>
+          <!-- 9Jacart Payment Options -->
+          <div class="footer-column">
+            <h3>9Jacart Payment Options</h3>
+            <ul class="footer-links">
+              <li><a href="#">Bank Payments (Visa, MasterCard)</a></li>
+              <li><a href="#">Buy Now, Pay Later (BNPL)</a></li>
+              <li><a href="#">Pay on Delivery</a></li>
+              <li><a href="#">Emergency Credit</a></li>
+            </ul>
           </div>
 
-          <!-- Help Column -->
-          <div class="col-md-3">
-            <nav class="footer-nav" aria-label="Customer Support Navigation">
-              <h4 class="footer-heading">Let Us Help You</h4>
-              <ul class="footer-links">
-                <li><a href="#account">Your Account</a></li>
-                <li><a href="#orders">Your Orders</a></li>
-                <li><a href="#returns">Returns & Replacements</a></li>
-                <li><a href="#help">Help</a></li>
-              </ul>
-            </nav>
+          <!-- Let Us Help You -->
+          <div class="footer-column">
+            <h3>Let Us Help You</h3>
+            <ul class="footer-links">
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Returns & Replacements</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Main Footer Section -->
-    <footer class="main-footer" aria-label="Main Site Footer">
-      <div class="container">
-        <div class="footer-content row g-4">
+    <!-- Primary Footer Section -->
+    <footer class="primary-footer">
+      <div class="container-fluid">
+        <div class="footer-content">
           <!-- Logo and Subscribe Column -->
-          <div class="col-lg footer-col">
+          <div class="footer-column">
             <div class="footer-brand">
               <a href="#" class="footer-logo">
-                <!-- <img src="http://s3-alpha-sig.figma.com/img/f1e5/0dd7/484f5f022429060a671b8df2f1fc9455?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RjAiCHjgVBvEqKdds45-oBvTwJLONq-QN-VZxYrK86GLxcYM8EAzrC2egiQJHMJIh62aHHtmPCUP1Qqoz9ZJNZXluFautbgSDiVWhEgE5VE7ChNlRIecWnnLGrr3oOhnZe8kUcs03GZcbPRhxjdxMA2l-OgFXXKHFqCaQN4ssk4jMvb3Ya90BkB5aJS9hPtHx3miBuWajeX2twNTcj3tpbQutjx89PMK9neQVVw5sSTug3EECPSZuol4M~diaHncWsmkHGX9WnhrabRng7n7P6bXRnWIoX3xIO3mxverYZdLSwZq8PL3kQ035f8FKVKqeTwrkHImrnGKC4tnF-J3bw__" alt="9jacart Logo" > -->
-                <i class="fas fa-leaf"></i>
-                <span class="logo-text">
-                  <span class="nine">9ja</span>
-                  <span class="cart">-cart</span>
-                </span>
+                <img
+                  class="navbar-logo-image"
+                  src="assets/img/logo.png"
+                  alt="9jacart Logo"
+                />
               </a>
             </div>
             <div class="subscribe-section">
-              <h4 class="footer-heading">Subscribe</h4>
-              <p class="promo-text">Get 10% off your first order</p>
-              <form class="subscribe-form" aria-label="Newsletter subscription">
+              <h3>Subscribe</h3>
+              <p>Get 10% off your first order</p>
+              <form class="subscribe-form">
                 <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter your email"
-                    aria-label="Enter your email"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    class="submit-btn"
-                    aria-label="Subscribe"
-                  >
-                    <i class="fas fa-arrow-right"></i>
+                  <input type="email" placeholder="Enter your email" required />
+                  <button type="submit">
+                    <i class="fa-paper-plane fas"></i>
                   </button>
                 </div>
               </form>
@@ -1491,109 +1432,76 @@
           </div>
 
           <!-- Support Column -->
-          <div class="col-lg footer-col">
-            <h4 class="footer-heading">Support</h4>
-            <address class="footer-address">
-              <p class="address-text">
-                No2 Buhari Estate,<br />
-                Kobape Road, GFA<br />
-                Abeokuta, Ogun.
-              </p>
-              <p class="contact-info">
-                <a href="mailto:9jacart@gmail.com">9jacart@gmail.com</a><br />
-                <a href="tel:+2348105658696">+234-8105658696</a>
-              </p>
+          <div class="footer-column">
+            <h3>Support</h3>
+            <address>
+              No2 Buhari Estate,<br />
+              Kobape Road, GFA<br />
+              Abeokuta, Ogun.<br /><br />
+              <a href="mailto:9jacart@gmail.com">9jacart@gmail.com</a><br />
+              <a href="tel:+2348105658696">+234-8105658696</a>
             </address>
           </div>
 
           <!-- Account Column -->
-          <div class="col-lg footer-col">
-            <h4 class="footer-heading">Account</h4>
-            <nav class="footer-nav" aria-label="Account Navigation">
-              <ul class="footer-links">
-                <li><a href="#my-account">My Account</a></li>
-                <li><a href="#login">Login / Register</a></li>
-                <li><a href="#cart">Cart</a></li>
-                <li><a href="#wishlist">Wishlist</a></li>
-                <li><a href="#shop">Shop</a></li>
-              </ul>
-            </nav>
+          <div class="footer-column">
+            <h3>Account</h3>
+            <ul class="footer-links">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Login / Register</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
           </div>
 
-          <!-- Quick Links Column -->
-          <div class="col-lg footer-col">
-            <h4 class="footer-heading">Quick Link</h4>
-            <nav class="footer-nav" aria-label="Quick Links Navigation">
-              <ul class="footer-links">
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms Of Use</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+          <!-- Quick Link Column -->
+          <div class="footer-column">
+            <h3>Quick Link</h3>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
 
           <!-- Download App Column -->
-          <div class="col-lg footer-col">
-            <h4 class="footer-heading">Download App</h4>
+          <div class="footer-column">
+            <h3>Download App</h3>
             <p class="app-promo">Save $3 with App New User Only</p>
             <div class="app-download">
               <div class="qr-code">
-                <img
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://9jacart.com/app"
-                  alt="Download app QR code"
-                  width="80"
-                  height="80"
-                />
+                <img src="assets/img/qrcode.jpeg" alt="QR Code" />
               </div>
               <div class="app-buttons">
-                <a
-                  href="#google-play"
-                  class="app-btn"
-                  aria-label="Get it on Google Play"
-                >
+                <a href="#" class="app-btn">
                   <img
-                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    src="assets/img/google-icon.png"
                     alt="Get it on Google Play"
-                    height="40"
                   />
                 </a>
-                <a
-                  href="#app-store"
-                  class="app-btn"
-                  aria-label="Download on the App Store"
-                >
+                <a href="#" class="app-btn">
                   <img
-                    src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
+                    src="assets/img/apple-icon.png"
                     alt="Download on the App Store"
-                    height="40"
                   />
                 </a>
               </div>
             </div>
             <div class="social-links">
-              <a href="#facebook" aria-label="Follow us on Facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#twitter" aria-label="Follow us on Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#instagram" aria-label="Follow us on Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#linkedin" aria-label="Follow us on LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+              <a href="#"><i class="fa-facebook-f fab"></i></a>
+              <a href="#"><i class="fa-twitter fab"></i></a>
+              <a href="#"><i class="fa-instagram fab"></i></a>
+              <a href="#"><i class="fa-linkedin-in fab"></i></a>
             </div>
           </div>
         </div>
       </div>
       <!-- Copyright Bar -->
       <div class="copyright-bar">
-        <div class="container">
-          <p class="copyright-text">
-            <i class="far fa-copyright"></i> Copyright 2025. All right reserved
-          </p>
+        <div class="container-fluid">
+          <p>© Copyright 2025. All right reserved</p>
         </div>
       </div>
     </footer>
