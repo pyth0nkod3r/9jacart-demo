@@ -95,6 +95,19 @@ document.addEventListener("DOMContentLoaded", function () {
     return tooltipList;
   }
 
+    // Initialize Category Cards
+    function initializeCategoryCards() {
+        const categoryCards = document.querySelectorAll('.category-card');
+        categoryCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Remove active class from all cards
+                categoryCards.forEach(c => c.classList.remove('active'));
+                // Add active class to clicked card
+                this.classList.add('active');
+            });
+        });
+    }
+
     // Initialize Product Interactions
     function initializeProductInteractions(container) {
         // Wishlist functionality
@@ -166,35 +179,23 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         e.stopPropagation();
         const tooltip = bootstrap.Tooltip.getInstance(this);
-        const productName =
-          this.closest(".product-card").querySelector(
-            ".product-name"
-          ).textContent;
-                const isAdding = !this.classList.contains("added");
+        const productName = this.closest(".product-card").querySelector(".product-name").textContent;
+        const isAdding = !this.classList.contains("added");
 
-                this.classList.toggle("added", isAdding);
-                this.setAttribute(
-                    "data-bs-title",
-                    isAdding ? "Added to Cart" : "Add to Cart"
-                );
-                tooltip.setContent({
-                    ".tooltip-inner": isAdding ? "Added to Cart" : "Removed from Cart",
-                });
+        this.classList.toggle("added", isAdding);
+        this.textContent = isAdding ? "Remove from Cart" : "Add To Cart";
+        this.setAttribute("data-bs-title", isAdding ? "Added to Cart" : "Add to Cart");
+        tooltip.setContent({
+          ".tooltip-inner": isAdding ? "Added to Cart" : "Removed from Cart",
+        });
 
         this.classList.add("animate__animated", "animate__pulse");
-        this.addEventListener(
-          "animationend",
-          () => {
-            this.classList.remove("animate__animated", "animate__pulse");
-          },
-          { once: true }
-        );
+        this.addEventListener("animationend", () => {
+          this.classList.remove("animate__animated", "animate__pulse");
+        }, { once: true });
 
-        console.log(
-                    `${isAdding ? "Added" : "Removed"} ${productName} ${isAdding ? "to" : "from"
-          } cart`
-        );
-                setTimeout(() => tooltip.hide(), 2000);
+        console.log(`${isAdding ? "Added" : "Removed"} ${productName} ${isAdding ? "to" : "from"} cart`);
+        setTimeout(() => tooltip.hide(), 2000);
       });
     });
   }
@@ -421,6 +422,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function initializeAllSections() {
         // Initialize common UI elements
         initializeCommonUI();
+
+        // Initialize Category Cards
+        initializeCategoryCards();
 
         // Initialize Flash Sales Section
         const flashSalesSection = document.querySelector(".flash-sales");
