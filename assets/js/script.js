@@ -631,6 +631,39 @@ document.addEventListener("DOMContentLoaded", function () {
         trigger: "hover",
       });
     });
+
+    // Initialize Related Items Section
+    const relatedItemsSection = document.querySelector(
+      ".container-fluid .row.g-4"
+    );
+    if (relatedItemsSection) {
+      // Initialize tooltips for related items
+      initializeTooltips(relatedItemsSection);
+
+      // Initialize product interactions for related items
+      initializeProductInteractions(relatedItemsSection);
+
+      // Add hover effects for related product cards
+      const relatedProducts =
+        relatedItemsSection.querySelectorAll(".product-card");
+      relatedProducts.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.style.transform = "translateY(-5px)";
+          card.style.transition = "transform 0.3s ease";
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "translateY(0)";
+        });
+
+        // Add click handler for product navigation
+        card.addEventListener("click", () => {
+          const productName = card.querySelector(".product-name").textContent;
+          console.log(`Navigating to product: ${productName}`);
+          // You can add actual navigation here
+        });
+      });
+    }
   }
 
   // Add mobile menu handling
