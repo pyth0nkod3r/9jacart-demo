@@ -434,102 +434,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Initialize Categories Page
-  function initializeCategories() {
-    const categoriesContent = document.querySelector(".categories-content");
-    if (!categoriesContent) return;
-
-    // Category List Functionality
-    const categoryLinks = document.querySelectorAll(".categories-list a");
-    categoryLinks.forEach((link) => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        categoryLinks.forEach((l) => l.classList.remove("active"));
-        this.classList.add("active");
-        console.log(`Selected category: ${this.textContent.trim()}`);
-      });
-    });
-
-    // Filter Dropdowns
-    const sortByBtn = document.querySelector(
-      ".filter-section button:nth-child(1)"
-    );
-    const priceRangeBtn = document.querySelector(
-      ".filter-section button:nth-child(2)"
-    );
-
-    if (sortByBtn) {
-      sortByBtn.addEventListener("click", function () {
-        const options = [
-          "Newest First",
-          "Price: Low to High",
-          "Price: High to Low",
-          "Most Popular",
-        ];
-        const currentOption = this.textContent.trim();
-        const nextOption =
-          options[(options.indexOf(currentOption) + 1) % options.length];
-        this.textContent = nextOption;
-        console.log(`Sorting by: ${nextOption}`);
-      });
-    }
-
-    if (priceRangeBtn) {
-      priceRangeBtn.addEventListener("click", function () {
-        const ranges = ["$0 - $100", "$100 - $500", "$500 - $1000", "$1000+"];
-        const currentRange = this.textContent.trim();
-        const nextRange =
-          ranges[(ranges.indexOf(currentRange) + 1) % ranges.length];
-        this.textContent = nextRange;
-        console.log(`Price range: ${nextRange}`);
-      });
-    }
-
-    // Initialize Product Cards
-    const productsContainer = categoriesContent.querySelector(".row.g-4");
-    if (productsContainer) {
-      // Initialize tooltips
-      initializeTooltips(productsContainer);
-
-      // Initialize product interactions
-      initializeProductInteractions(productsContainer);
-
-      // Add hover effects and click handling for product cards
-      const productCards = productsContainer.querySelectorAll(".product-card");
-      productCards.forEach((card) => {
-        // Add hover effect
-        card.addEventListener("mouseenter", () => {
-          card.style.transform = "translateY(-5px)";
-          card.style.transition = "transform 0.3s ease";
-        });
-
-        card.addEventListener("mouseleave", () => {
-          card.style.transform = "translateY(0)";
-        });
-
-        // Add click handler for product navigation
-        card.addEventListener("click", () => {
-          const productName = card.querySelector(".product-name").textContent;
-          console.log(`Navigating to product: ${productName}`);
-          // You can add actual navigation here
-          window.location.href = "product-details.html";
-        });
-      });
-
-      // Initialize color selection
-      const colorDots = productsContainer.querySelectorAll(".color-dot");
-      colorDots.forEach((dot) => {
-        dot.addEventListener("click", function (e) {
-          e.stopPropagation(); // Prevent card click
-          const colorDots =
-            this.closest(".color-options").querySelectorAll(".color-dot");
-          colorDots.forEach((d) => d.classList.remove("active"));
-          this.classList.add("active");
-        });
-      });
-    }
-  }
-
   // Initialize all sections
   function initializeAllSections() {
     // Initialize common UI elements
@@ -537,9 +441,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initialize Category Cards
     initializeCategoryCards();
-
-    // Initialize Categories Page
-    initializeCategories();
 
     // Initialize Flash Sales Section
     const flashSalesSection = document.querySelector(".flash-sales");
