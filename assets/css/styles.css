@@ -1772,7 +1772,6 @@ img {
   }
 }
 
-/* Mobile Devices */
 @media (min-width: 0) and (max-width: 576px) {
   /* Typography */
   .category-label {
