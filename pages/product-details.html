@@ -8,28 +8,28 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css "
-      onerror="this.onerror=null;this.href='./assets/css/font-awesome.min.css';"
+      onerror="this.onerror=null;this.href='../assets/css/font-awesome.min.css';"
     />
     <!-- Animate.css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      onerror="this.onerror=null;this.href='./assets/css/animate.min.css';"
+      onerror="this.onerror=null;this.href='../assets/css/animate.min.css';"
     />
     <!-- Normalize CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      onerror="this.onerror=null;this.href='./assets/css/modern-normalize.css';"
+      onerror="this.onerror=null;this.href='../assets/css/modern-normalize.css';"
     />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      onerror="this.onerror=null;this.href='./assets/css/bootstrap.min.css';"
+      onerror="this.onerror=null;this.href='../assets/css/bootstrap.min.css';"
       rel="stylesheet"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
 
   <body>
@@ -73,7 +73,7 @@
             <a href="#" class="logo">
               <img
                 class="navbar-logo-image"
-                src="assets/img/logo.png"
+                src="../assets/img/logo.png"
                 alt="9jacart Logo"
               />
             </a>
@@ -102,7 +102,7 @@
                   type="submit"
                   class="search-button"
                   title="Search"
-                  aria-label="Search"
+                  aria-label="Search products"
                 >
                   <i class="fa-search fas"></i>
                 </button>
@@ -141,148 +141,205 @@
     <!-- Main Content Section -->
     <main class="main-content">
       <div class="container-fluid">
-        <!-- Hero Section -->
-        <section class="hero">
-          <hr />
-          <div class="row">
-            <!-- Sidebar Navigation -->
-            <aside class="col-md-3 sidebar-nav">
-              <nav class="nav-menu">
-                <ul class="flex-column nav">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Appliances</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Baby Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="#"
-                      class="d-flex nav-link align-items-center justify-content-between"
-                    >
-                      Device & Accessories
-                      <i class="fa-chevron-right fas"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Groceries</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Health</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Laundry</a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="#"
-                      class="d-flex nav-link align-items-center justify-content-between"
-                    >
-                      Men's Fashion
-                      <i class="fa-chevron-right fas"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Travel & Tours</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Uber / Bolt</a>
-                  </li>
-                </ul>
-              </nav>
-            </aside>
+        <hr />
 
-            <!-- Main Banner -->
-            <div class="col-md-9 main-banner">
-              <div class="banner-content">
-                <div class="banner-left">
-                  <i class="fa-apple fab"></i>
-                  <div class="device-series">iPhone 14 Series</div>
-                  <h1 class="banner-heading">Up to 10% off Voucher</h1>
-                  <a href="#" class="shop-now-link">
-                    Shop Now <i class="fa-arrow-right fas"></i>
-                  </a>
+        <!-- Page Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="page-navigation">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-decoration-none text-muted">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-decoration-none text-muted">Gaming</a>
+                </li>
+                <li class="breadcrumb-item active text-dark">
+                  Havic HV G-92 Gamepad
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="welcome-text">
+            <span class="text-dark">Welcome! Dorime</span>
+          </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="product-details">
+          <div class="row">
+            <!-- Left Column - Product Images -->
+            <div class="col-md-6">
+              <div class="product-gallery">
+                <div class="thumbnail-list">
+                  <div class="thumbnail-item active">
+                    <img
+                      src="https://s3-alpha-sig.figma.com/img/1490/1cca/de638588f27b571d7565fbaacfe57243?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PsbSwslvQlmCG4xl4glBFyx~mdUWWVN3mQulKHS16Vup0BGDz~-~rPZ5WGrIWm1x193wKlduB5LzhaGGD~wsYY9PcObzuK4MzyqW~DF9kEEvvManmjEVhXFrW3heWjVaxxB5S9BCamrPDkHFDBX6ZsI9ATjGRhbdRB0axJSlLsT1xnw6g1RJzLAuvIZxhefgEUw2P~x87UdJnfLHjeQNSGYXu-hR82bVEcDL8eWvs8B5Gkp7~WnsnCC92BeSFdhA4ADyQnZuXHwtRdbniIxoc2b9PxckQ~97-BLmmHJnajK2dBwFtukhZhdp4x4pZJ7OtFgfoHVYOpwNiaiMMpzZ~w__"
+                      alt="Gamepad view 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="thumbnail-item">
+                    <img
+                      src="https://s3-alpha-sig.figma.com/img/ca92/325b/4d31381f7fe4841786f4511bd4849d87?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mYLkTy76n7eZeQQ2S2om0CqZJFf7cIaGGmnhJgQMtebwsk7ULHmoutFR-RTVHxLZ~Tz5LBd5a0Vl-zHdg9eQcow~nywCh4fxl9rFB8KKPg0UMNxvxNq-M3~p2dauALnmRflA5PVGVvTCSmPZ7WQoDIRvJkiPiSZDtb9eVNvKhJpg0Y6TDNGkLoEz5x739WcI8RGNEMOZrD~1eY~mL9ZD4KpvqvMj3gGpLuUJmQatP06RCm7VJFq3Y~tRRUc2njCanUahwTPFmjcz9jziL9SJUbsorSB86aiPjHJ0xyI9hG1oy66yPIOVfbx5m0jIoIp9kEeEQer2B~3URS8wF70aQQ__"
+                      alt="Gamepad view 2"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="thumbnail-item">
+                    <img
+                      src="https://s3-alpha-sig.figma.com/img/bdcf/fcaa/9b23a76cbe02748d2090a0b9a11cf0a5?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BPyetndNJnfVcTARIkP0pudWVM2iZhqRR~nYVCQ8dH3FLx4cVN4R5kEulMKK8X16PSiNJeqadOXDmSGN2WRCKzg2lJoYLnnFWE8gyN2TqQ9T7s1rZdnx9odvBO0EnjfUH4sTI1m~ICWsgzgJ1z5CyXgVZD5ZbMEhUAj9doi77sbinxhJJqZB4ZRYk6PaW6SV81Ny6WOoXTkG24cYAqPtV~cZfxHkFkaLw5WQ33Pecp7UUvNxEHPKWnIFGOrAOsG15SstP9ftkUGO~QRVOgiBeQihq8rpFDoYr6XVJRqlPZNZVg0bfLyjLDtTpe3trt1o~fD-oKOlN61eriBUPKk81Q__"
+                      alt="Gamepad view 3"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="thumbnail-item">
+                    <img
+                      src="https://s3-alpha-sig.figma.com/img/f109/e9ce/a445f7c73ec2a2153e0e149e85ee9d28?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=EmCnOt0U3HfsUdcKI6u7OF9X5-WjJej7gG-EGJT5jaMLKItq9xO8zuIT-E2fpKnFh7sAEF6PTNFQxNRtESJHtOG0tYw8X7AQaHgc0PCIGEjBC8QshKzlyW0184ZtdzfCbfQi55ir39gklsT4-2VsDmnqkcA0VC7g4UXm5-y0u~hxCui1IqFDyJodztd4EheZBxPyCBLGLKrG6g2Df4tOnUnz12OomstjLafBRhyeRRc0tzJwrF~JOqvbKX~PRCL3BNDQBLDRcR4G1t-MyRkA0y0sWCUChsxgKIQPrrc~~0Ba3Frc76U~cJV0oU4O3J1tmn~VTpVJEmFGjQQA8dx0rQ__"
+                      alt="Gamepad view 4"
+                      class="img-fluid"
+                    />
+                  </div>
                 </div>
-                <div class="banner-right">
+                <div class="main-image">
                   <img
-                    src="assets/img/hero-img.jpeg"
-                    alt="iPhone 14"
-                    class="banner-image"
+                    src="https://s3-alpha-sig.figma.com/img/faa8/0b60/9e3950aed9181acb44510f859f50d850?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZNrDtr-aVSb9QkrhUIsovIyzx~eR9uywjvqT3PGOJUyUPVIx7Z9U9rxUs2QfAwRUbkuDSxU0-CeojOsGQOFV5T4qsiYberF9fy6ZigdbbLADRcEpM7pxIk22RgE0jItVq3YvIyuynasWRSznJTe~jtwm-zVwZVfbhNjML9ZU6jzCuyroynd5vgyNxR45ZOMMX6CKUPNHkxdJMGybBDZoRlFf95vBEnI~DIKLi8VSNdXEnxrlDkdywLKNn3oYH1j0rhgeNYJ92MOQThjR72M6rwSaeznmCJYk7L9kHmKkGbA28sYcxyBOqE5IvEtr~0j5ORJta5o-Wjm95uDfZ2SA0g__"
+                    alt="Havic HV G-92 Gamepad"
+                    class="img-fluid"
                   />
                 </div>
               </div>
-              <div class="banner-dots">
-                <span class="active dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
             </div>
-          </div>
-        </section>
 
-        <!-- Flash Sales Section -->
-        <section class="flash-sales">
-          <div
-            class="d-flex align-items-center justify-content-between flash-sales-header"
-          >
-            <div class="header-left">
-              <div class="d-flex align-items-center section-indicator">
-                <span class="indicator-bar"></span>
-                <h3 class="today-text">Today's</h3>
-              </div>
-              <div class="d-flex align-items-center gap-4">
-                <h2 class="section-title">Flash Sales</h2>
-                <!-- Countdown Timer -->
-                <div class="d-flex align-items-center countdown-timer">
-                  <div class="timer-unit">
-                    <span class="unit-label">Days</span>
-                    <span class="unit-value">03</span>
+            <!-- Right Column - Product Info -->
+            <div class="col-md-6">
+              <div class="product-info">
+                <h1 class="product-title">Havic HV G-92 Gamepad</h1>
+                <div class="product-meta">
+                  <div class="rating">
+                    <div class="stars" data-rating="4.5">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="review-count">(150 Reviews)</span>
+                    <span class="stock-status">| In Stock</span>
                   </div>
-                  <span class="timer-separator">:</span>
-                  <div class="timer-unit">
-                    <span class="unit-label">Hours</span>
-                    <span class="unit-value">23</span>
+                </div>
+                <div class="product-price">
+                  <span class="price">$192.00</span>
+                </div>
+                <div class="product-description">
+                  <p>
+                    PlayStation 5 Controller Skin High quality vinyl with air
+                    channel adhesive for easy bubble free install & mess free
+                    removal Pressure sensitive.
+                  </p>
+                </div>
+                <div class="product-options">
+                  <div class="color-selection">
+                    <label>Colours:</label>
+                    <div class="color-options">
+                      <button
+                        class="color-dot active"
+                        style="background-color: #000000"
+                        aria-label="Select Black Color"
+                      ></button>
+                      <button
+                        class="color-dot"
+                        style="background-color: #db4444"
+                        aria-label="Select Red Color"
+                      ></button>
+                    </div>
                   </div>
-                  <span class="timer-separator">:</span>
-                  <div class="timer-unit">
-                    <span class="unit-label">Minutes</span>
-                    <span class="unit-value">19</span>
+                  <div class="size-selection">
+                    <label>Size:</label>
+                    <div class="size-options">
+                      <button class="size-btn">XS</button>
+                      <button class="size-btn">S</button>
+                      <button class="size-btn active">M</button>
+                      <button class="size-btn">L</button>
+                      <button class="size-btn">XL</button>
+                    </div>
                   </div>
-                  <span class="timer-separator">:</span>
-                  <div class="timer-unit">
-                    <span class="unit-label">Seconds</span>
-                    <span class="unit-value">56</span>
+                </div>
+                <div class="product-actions">
+                  <div class="quantity-selector">
+                    <button
+                      class="quantity-btn minus"
+                      title="Decrease quantity"
+                      aria-label="Decrease quantity"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="text"
+                      value="2"
+                      class="quantity-input"
+                      readonly
+                      title="Product quantity"
+                      aria-label="Product quantity"
+                    />
+                    <button
+                      class="quantity-btn plus"
+                      title="Increase quantity"
+                      aria-label="Increase quantity"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <button class="btn btn-success buy-now-btn">Buy Now</button>
+                  <button class="btn btn-outline-dark add-to-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="delivery-info">
+                  <div class="delivery-option">
+                    <div class="icon">
+                      <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="info">
+                      <h3>Free Delivery</h3>
+                      <p>Enter your postal code for Delivery Availability</p>
+                    </div>
+                  </div>
+                  <div class="delivery-option">
+                    <div class="icon">
+                      <i class="fas fa-rotate-left"></i>
+                    </div>
+                    <div class="info">
+                      <h3>Return Delivery</h3>
+                      <p>Free 30 Days Delivery Returns. Details</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="navigation-arrows flash-nav-arrow">
-              <button
-                class="nav-arrow prev"
-                title="Previous"
-                aria-label="View previous items"
-              >
-                <i class="fa-chevron-left fas"></i>
-              </button>
-              <button
-                class="nav-arrow next"
-                title="Next"
-                aria-label="View next items"
-              >
-                <i class="fa-chevron-right fas"></i>
-              </button>
+          </div>
+        </div>
+
+        <!-- Related Items Section -->
+        <div class="container-fluid mt-5">
+          <div class="section-header d-flex align-items-center mb-4">
+            <div class="section-indicator me-3">
+              <div class="indicator-bar bg-success"></div>
             </div>
+            <h2 class="section-title mb-0">Related Item</h2>
           </div>
 
-          <!-- Product Cards Grid -->
-          <div class="g-4 row product-grid">
-            <!-- Product Card 1 -->
+          <div class="row g-4">
+            <!-- Related Product 1 -->
             <div class="col-lg-3 col-md-6">
               <article class="product-card">
-                <div class="card-header">
+                <div class="product-image">
                   <span class="discount-tag">-40%</span>
+                  <img
+                    src="../assets/img/hv-g92 gamepad.png"
+                    alt="HAVIT HV-G92 Gamepad"
+                    class="img-fluid"
+                  />
                   <button
                     class="wishlist-btn"
                     aria-label="Add to wishlist"
@@ -290,17 +347,16 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="fa-heart far"></i>
+                    <i class="far fa-heart"></i>
                   </button>
-                </div>
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=f-nDXutPaUy7cd9G1MCDeTajw4RED9QdKlRWRN~3tQg8z4puQymrMv57yfN9VyW0JbT52Foj~2PpaH3aTyz8Z0DCdzY~n2Ppa3RICUXXkqNPNTnWxFkCqGBanyVgoZotbQxu~6EhP7s0ch9OlFMd~sxh3lCbf1QoytT-ayqRuzkmM4VL-pTrxUSKOfKfsSdwUbv0xXRu2GkUi2MVhggosrn8fcB2zPkeDQv~JZd-W7FSPCQ-8uL0OV7bJwCu8q7KtAGg7nzdt92dswRqKOwXjfN7mjGO0szxgxpvjItU8DxflebyKsNRh3nLLadCK4Kar2a5h~9em3pzS186LmgWCA__"
-                    alt="HAVIT HV-G92 Gamepad"
-                    class="img-fluid"
-                  />
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
+                  <button
+                    class="quick-view"
+                    aria-label="Quick view"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Quick View"
+                  >
+                    <i class="far fa-eye"></i>
                   </button>
                   <button
                     class="add-to-cart-btn"
@@ -315,15 +371,18 @@
                   <h3 class="product-name">HAVIT HV-G92 Gamepad</h3>
                   <div class="product-price">
                     <span class="current-price">$120</span>
-                    <span class="original-price">$160</span>
+                    <span
+                      class="original-price text-decoration-line-through text-muted"
+                      >$160</span
+                    >
                   </div>
                   <div class="product-rating">
                     <div class="stars" data-rating="5">
-                      <i class="fa-star fas" data-value="1"></i>
-                      <i class="fa-star fas" data-value="2"></i>
-                      <i class="fa-star fas" data-value="3"></i>
-                      <i class="fa-star fas" data-value="4"></i>
-                      <i class="fa-star fas" data-value="5"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                     </div>
                     <span class="review-count">(88)</span>
                   </div>
@@ -331,11 +390,16 @@
               </article>
             </div>
 
-            <!-- Product Card 2 -->
+            <!-- Related Product 2 -->
             <div class="col-lg-3 col-md-6">
               <article class="product-card">
-                <div class="card-header">
+                <div class="product-image">
                   <span class="discount-tag">-35%</span>
+                  <img
+                    src="../assets/img/kids electric car.png"
+                    alt="AK-900 Wired Keyboard"
+                    class="img-fluid"
+                  />
                   <button
                     class="wishlist-btn"
                     aria-label="Add to wishlist"
@@ -343,17 +407,16 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="fa-heart far"></i>
+                    <i class="far fa-heart"></i>
                   </button>
-                </div>
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/e59d/9f34/8cc24eeff489863523b63971c3ff8e4a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rDHnDBBlqXwilTum9bKzrXjI-G4~yxLxhhhIosvqDlFjmt8BNMDH3myTpmYfYa1714xWj71hOfjgh-u7fVMN9SLSa154qI6r-JSd4JmRrEoya5nhxK86ph8wV0M7MUeA2Yq8zYnOPoKw6jGK4Mqh9x6R-hLj5qTe3LoP4UwyT-vXbXNJeAD1cexfO7e08ui~bzhddridE4FeCEXO1ULCiomIUaYhm2CtBqxxnEss7hkA31N0sX0vPN7r8gDYynCJ7uL6Xgjy0HAIH1GxiksJ-EJMLz-Zfurlr9VAvQylOJYkOuvj2~3ezwGEusSO71htX0pN~9AC8IZRNXhfeLIPnw__"
-                    alt="AK-900 Wired Keyboard"
-                    class="img-fluid"
-                  />
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
+                  <button
+                    class="quick-view"
+                    aria-label="Quick view"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Quick View"
+                  >
+                    <i class="far fa-eye"></i>
                   </button>
                   <button
                     class="add-to-cart-btn"
@@ -368,15 +431,18 @@
                   <h3 class="product-name">AK-900 Wired Keyboard</h3>
                   <div class="product-price">
                     <span class="current-price">$960</span>
-                    <span class="original-price">$1160</span>
+                    <span
+                      class="original-price text-decoration-line-through text-muted"
+                      >$1160</span
+                    >
                   </div>
                   <div class="product-rating">
-                    <div class="stars">
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star far"></i>
+                    <div class="stars" data-rating="4">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
                     </div>
                     <span class="review-count">(75)</span>
                   </div>
@@ -384,11 +450,16 @@
               </article>
             </div>
 
-            <!-- Product Card 3 -->
+            <!-- Related Product 3 -->
             <div class="col-lg-3 col-md-6">
               <article class="product-card">
-                <div class="card-header">
+                <div class="product-image">
                   <span class="discount-tag">-30%</span>
+                  <img
+                    src="../assets/img/ips lcd gaming monitor.png"
+                    alt="IPS LCD Gaming Monitor"
+                    class="img-fluid"
+                  />
                   <button
                     class="wishlist-btn"
                     aria-label="Add to wishlist"
@@ -396,17 +467,16 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="fa-heart far"></i>
+                    <i class="far fa-heart"></i>
                   </button>
-                </div>
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/5e63/4682/db5174aff99bb9337d2dc9598a0b44e4?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=No1gx2ZZQpRWeOM-mLkgSsgpufHtCzW2CBQ5R-7psFnSp7WTvT-vkB4IPjf~2emw1qYRpUvjZSgfPm3YpW1Fra37ho2epdWXGnsN07m0vA-BAfXup~JjzyYfbOQTNFXb2viq37pAiuXc7btUWFOpDrlyVRH1HjLAvjszbvsgEprkurvFPxRALEC7ah3RiPf-CSd322ZbmUeOseWo1a5m~k8eKvQBJAfCOvAX81-9uDYkUKwMqpuzigzDzGIJk9eBEtwU3fKbmhTxExgw3zL52oc5NsEZsAKVEdWgFoEn-NZ1EfM999S3nddkVp066MAtn8MEWVHUF4SGo5XCoY3heg__"
-                    alt="IPS LCD Gaming Monitor"
-                    class="img-fluid"
-                  />
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
+                  <button
+                    class="quick-view"
+                    aria-label="Quick view"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Quick View"
+                  >
+                    <i class="far fa-eye"></i>
                   </button>
                   <button
                     class="add-to-cart-btn"
@@ -421,15 +491,18 @@
                   <h3 class="product-name">IPS LCD Gaming Monitor</h3>
                   <div class="product-price">
                     <span class="current-price">$370</span>
-                    <span class="original-price">$400</span>
+                    <span
+                      class="original-price text-decoration-line-through text-muted"
+                      >$400</span
+                    >
                   </div>
                   <div class="product-rating">
-                    <div class="stars">
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
+                    <div class="stars" data-rating="5">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                     </div>
                     <span class="review-count">(99)</span>
                   </div>
@@ -437,11 +510,15 @@
               </article>
             </div>
 
-            <!-- Product Card 4 -->
+            <!-- Related Product 4 -->
             <div class="col-lg-3 col-md-6">
               <article class="product-card">
-                <div class="card-header">
-                  <span class="discount-tag">-25%</span>
+                <div class="product-image">
+                  <img
+                    src="../assets/img/kids electric car.png"
+                    alt="RGB liquid CPU Cooler"
+                    class="img-fluid"
+                  />
                   <button
                     class="wishlist-btn"
                     aria-label="Add to wishlist"
@@ -449,17 +526,16 @@
                     data-bs-placement="left"
                     data-bs-title="Add to Wishlist"
                   >
-                    <i class="fa-heart far"></i>
+                    <i class="far fa-heart"></i>
                   </button>
-                </div>
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/288d/a330/273c46e1c3dc0a8915c4b031d0345347?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ie7~ysXVkQZFqo~p~Oz7WGZSTJh9EiorH1dJZUbWvLktqIF3PXdBf3zL~qICugSYqwq-oZtNfNStpV1WAIurbND7g7WaT1d7g7wOJo~TBQNUe5GWtRsj9sgHPMlbDSz6~3L7dObcrnBtqq4YXVGDdVdte1-b5LlofWEQSrIDrrPW6ppON~EUPXzDLIflzCjdVJaExqAvdATfo9p5Bi8h5Fq-O-bWYyuolJppy8FPFENxrvElWX2uZfKruj0eJcPfxZKK~YnIDHxDkF5v-LekWvvH8Y3WCVJTRZOuUPrzt-TzL~ySQkuTAuBpltfJuXDKTREKu5DTd2iR61PDETOYYQ__"
-                    alt="S-Series Comfort Chair"
-                    class="img-fluid"
-                  />
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
+                  <button
+                    class="quick-view"
+                    aria-label="Quick view"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Quick View"
+                  >
+                    <i class="far fa-eye"></i>
                   </button>
                   <button
                     class="add-to-cart-btn"
@@ -471,266 +547,21 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">S-Series Comfort Chair</h3>
-                  <div class="product-price">
-                    <span class="current-price">$375</span>
-                    <span class="original-price">$400</span>
-                  </div>
-                  <div class="product-rating">
-                    <div class="stars">
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star-half-alt fas"></i>
-                    </div>
-                    <span class="review-count">(99)</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- View All Button -->
-          <div class="text-center mt-5">
-            <button class="view-all-btn">View All Products</button>
-          </div>
-        </section>
-
-        <!-- Category Browse Section -->
-        <section class="category-browse">
-          <div class="category-header">
-            <div class="category-title">
-              <div class="indicator-bar"></div>
-              <h2>Browse By Category</h2>
-            </div>
-            <div class="navigation-arrows">
-              <button
-                class="nav-arrow prev"
-                title="Previous"
-                aria-label="View previous category"
-              >
-                <i class="fa-chevron-left fas"></i>
-              </button>
-              <button
-                class="nav-arrow next"
-                title="Next"
-                aria-label="View next category"
-              >
-                <i class="fa-chevron-right fas"></i>
-              </button>
-            </div>
-          </div>
-
-          <div class="category-grid">
-            <div class="category-card">
-              <i class="category-icon fa-mobile-alt fas"></i>
-              <h3 class="category-name">Phones</h3>
-            </div>
-            <div class="category-card">
-              <i class="category-icon fa-desktop fas"></i>
-              <h3 class="category-name">Computers</h3>
-            </div>
-            <div class="category-card">
-              <i class="category-icon fa-watch fas"></i>
-              <h3 class="category-name">SmartWatch</h3>
-            </div>
-            <div class="active category-card">
-              <i class="category-icon fa-camera fas"></i>
-              <h3 class="category-name">Camera</h3>
-            </div>
-            <div class="category-card">
-              <i class="category-icon fa-headphones fas"></i>
-              <h3 class="category-name">HeadPhones</h3>
-            </div>
-            <div class="category-card">
-              <i class="category-icon fa-gamepad fas"></i>
-              <h3 class="category-name">Gaming</h3>
-            </div>
-          </div>
-        </section>
-
-        <!-- Best Selling Products Section -->
-        <section class="best-selling">
-          <div
-            class="d-flex align-items-center justify-content-between section-header"
-          >
-            <div class="header-left">
-              <div class="d-flex align-items-center section-indicator">
-                <span class="indicator-bar"></span>
-                <h3 class="month-text">This Month</h3>
-              </div>
-              <h2 class="section-title">Best Selling Products</h2>
-            </div>
-            <a
-              href="#"
-              class="view-all-btn"
-              aria-label="View all best selling products"
-              >View All</a
-            >
-          </div>
-
-          <div class="g-4 row product-grid">
-            <!-- Product Card 1 -->
-            <div class="col-lg-3 col-md-6">
-              <article class="product-card">
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/ee9a/3800/1e9f94261b28e16ea21bacb4144473e8?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uMXlODWTYd~VWNdqKEYPVxJh~PmTH48Ecjft6wn0LEjiYEc3Efu80KcLJ8XGFO8T~AUEJKRbv-Hs1Qxurxlw1YKE0GZjDHM~exk-ZKTLRRNGsQyYRViFXid3uLsRU6-PzR037z2yajMrkrpIuAvXsx6H4AMMZaEEcesF30KFYyVQzNidTr7YKTp~dtSI2056cn2Y49fizJiV63YCHLWmWHADfLbXd3lWCGFvqnVMY6JehO13sbkEglSGJa8wudgBevcR435LOiweTueoG~2aAp5pUZ76IGI0zMbqE8wLyHAqwB70Gz-~tXKe-hS1MqP90Zq-bOvtz1-zoXJhHm~DNQ__"
-                    alt="The north coat"
-                    class="img-fluid"
-                  />
-                  <button
-                    class="wishlist-btn"
-                    aria-label="Add to wishlist"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Add to Wishlist"
-                  >
-                    <i class="fa-heart far"></i>
-                  </button>
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">The north coat</h3>
-                  <div class="product-price">
-                    <span class="current-price">$260</span>
-                    <span class="original-price">$360</span>
-                  </div>
-                  <div class="product-rating">
-                    <div class="stars" data-rating="5">
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                    </div>
-                    <span class="review-count">(65)</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Product Card 2 -->
-            <div class="col-lg-3 col-md-6">
-              <article class="product-card">
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/4f3c/a1d1/2722dbdf98f25179d3c0b785988c513d?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=iHCTCBxWihFlWHixi6ck~apVuZ8jUuLXnYbqmPgWWwcHAbi98uQmAjPcZqQwPYgHoBSVFaphbx5zxplssv2r27DdGgCTySpkerdIOovQhv1VpuJYreMrYTNd6JIkaR44ejLfYRmvcy0AVOirAbeLryrpG7FX44yXo0CLpmwiQ5CeZvxlKjJ4AGGZItAKljgbtzNtEsPgmH8D5QZIHbro4v0-tCANo~LuDQS5DI40I4wTI83a1TOcKBK8FgGkmugEqLua7pvPxhSpepPHkc-r5iCR6m9B1Y0czeyGiF0pOJRr3mh4fh4riDKMi5RWlGBcRaQrlgXdQY77dWeOh-jy4A__"
-                    alt="Gucci duffle bag"
-                    class="img-fluid"
-                  />
-                  <button
-                    class="wishlist-btn"
-                    aria-label="Add to wishlist"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Add to Wishlist"
-                  >
-                    <i class="fa-heart far"></i>
-                  </button>
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Gucci duffle bag</h3>
-                  <div class="product-price">
-                    <span class="current-price">$960</span>
-                    <span class="original-price">$1160</span>
-                  </div>
-                  <div class="product-rating">
-                    <div class="stars" data-rating="5">
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                    </div>
-                    <span class="review-count">(65)</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Product Card 3 -->
-            <div class="col-lg-3 col-md-6">
-              <article class="product-card">
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/6739/d39d/c218c97b645d616c8188a4f2e6aaf84b?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XxhW7GXPh~ghm2q7e401IN-LQlu9aVzIgMpBost-lD~sTXVBdWI5EAE24vO-4b~1ZniM83Ps651OSBvtiuWPaKlyHMQB3aFFhx0mT7xXPUoU-AXDRj5WQ1nnxdSoUqvAYRTyzQDyY~pHAJ~Zjj19wWcv7u9co-3PYQ~poM19osScAk3yhHg4dOmWlY1SbbvZmw5lVxFgKIRQsx2w8zMG0BnfYtkJsMbitI3WUBXzogaW6cyY0H3~BTYs7WRXvIDSlElGR5NQbzMGrWh5Q22f5MUHOEssDsJMgYLVygglsTNCxVx~9x~dvs0xn7BRZVxuqOKkDmEh3AgRNla3-VuCug__"
-                    alt="RGB liquid CPU Cooler"
-                    class="img-fluid"
-                  />
-                  <button
-                    class="wishlist-btn"
-                    aria-label="Add to wishlist"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Add to Wishlist"
-                  >
-                    <i class="fa-heart far"></i>
-                  </button>
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
-                  </button>
-                </div>
-                <div class="product-info">
                   <h3 class="product-name">RGB liquid CPU Cooler</h3>
                   <div class="product-price">
                     <span class="current-price">$160</span>
-                    <span class="original-price">$170</span>
+                    <span
+                      class="original-price text-decoration-line-through text-muted"
+                      >$170</span
+                    >
                   </div>
                   <div class="product-rating">
-                    <div class="stars" data-rating="5">
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                    </div>
-                    <span class="review-count">(65)</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="col-lg-3 col-md-6">
-              <article class="product-card">
-                <div class="product-image">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/e86f/6e87/2757d20a14861e2e0ebd4e9889693f59?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=B-DwTUI-34T8sxHKhuoh~zZ7mc-iC0gwcz4cESMA2XJMoGx1yMXtHLqaXyzfAUboeXjFVKuqkNwVjxycNZLASJ6hOcsipepYS~XoDG40oE5lrwrhol5SAy96j1pHHpPX8NwhF7WhdgiSiqCpzl7p9GlKLInS~G9m8Z-MkiLdbWYXIDe5f6WYmmGQEl9qwvQc2yR8SxWJo37GfXp53Xuz~rSpRpTtvzqVyXUBNXyEtmV7w1HritwEfDew6X5-CBdUdfA7JWRu7Y7mxik5wQdYdOhALTeunakTq2YVskTJWTxZkuo7rYur-5y0zYyFy4C9RSRzXX1Bq0cPVHzbkh1-9A__"
-                    alt="Small BookSelf"
-                    class="img-fluid"
-                  />
-                  <button
-                    class="wishlist-btn"
-                    aria-label="Add to wishlist"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Add to Wishlist"
-                  >
-                    <i class="fa-heart far"></i>
-                  </button>
-                  <button class="quick-view" aria-label="Quick view">
-                    <i class="fa-eye far"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Small BookSelf</h3>
-                  <div class="product-price">
-                    <span class="current-price">$360</span>
-                  </div>
-                  <div class="product-rating">
-                    <div class="stars" data-rating="5">
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
-                      <i class="fa-star fas"></i>
+                    <div class="stars" data-rating="4.5">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
                     </div>
                     <span class="review-count">(65)</span>
                   </div>
@@ -738,629 +569,7 @@
               </article>
             </div>
           </div>
-        </section>
-
-        <!-- Promotional Banner Section -->
-        <section class="promo-banner" aria-label="Special Offer - JBL Boombox">
-          <div class="container-fluid">
-            <div class="promo-content">
-              <!-- Left Content -->
-              <div class="promo-info">
-                <span class="category-label">Categories</span>
-                <h2 class="promo-title">Enhance Your<br />Music Experience</h2>
-                <!-- Countdown Timer -->
-                <div class="countdown-circles" aria-label="Offer ends in">
-                  <div class="timer-circle">
-                    <span class="number">23</span>
-                    <span class="label">Hours</span>
-                  </div>
-                  <div class="timer-circle">
-                    <span class="number">05</span>
-                    <span class="label">Days</span>
-                  </div>
-                  <div class="timer-circle">
-                    <span class="number">59</span>
-                    <span class="label">Minutes</span>
-                  </div>
-                  <div class="timer-circle">
-                    <span class="number">35</span>
-                    <span class="label">Seconds</span>
-                  </div>
-                </div>
-                <a href="#" class="buy-now-btn" aria-label="Buy JBL Boombox Now"
-                  >Buy Now!</a
-                >
-              </div>
-              <!-- Right Content - Product Image -->
-              <div class="promo-image">
-                <img
-                  src="assets/img/jbl music box.png"
-                  alt="JBL Boombox Portable Speaker"
-                  class="product-img"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Product Display Section -->
-        <section class="product-display" aria-label="Product Display">
-          <div class="container-fluid">
-            <!-- Header Section -->
-            <header
-              class="d-flex align-items-center justify-content-between section-header"
-            >
-              <div class="header-left">
-                <div class="d-flex align-items-center section-indicator">
-                  <span class="indicator-bar"></span>
-                  <h3 class="category-label">Our Products</h3>
-                </div>
-                <div class="d-flex align-items-center justify-content-between">
-                  <h2 class="section-title">Explore Our Products</h2>
-                  <div class="navigation-arrows explore-nav-arrow">
-                    <button
-                      class="nav-arrow prev"
-                      aria-label="Previous products"
-                    >
-                      <i class="fa-arrow-left fas"></i>
-                    </button>
-                    <button class="nav-arrow next" aria-label="Next products">
-                      <i class="fa-arrow-right fas"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </header>
-
-            <!-- Product Grid -->
-            <div class="g-4 row product-grid">
-              <!-- Product 1: Breed Dry Dog Food -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/78e7/2711/8c99fe72271cf43f5e3566b39ca7c8f4?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Y14-RHTKyOwR9jyFtxyiKjwzN6H-2IHxcJrnU3PTpZzcPKo9d9iysIGF0IAtYvnjZWvYevB3Ok~eJe5UpsK6AjvOvNXyvZuud-Bqnisioe54prTrYOFAK~-bAmAfuS62gvrJwBxr3rnQf2Dmx~ZM2PEmkvcGR~Qu9VBSBP4xbPlLjFxyc6L5evra~gPA1Ev4pJNvRlwgagnP86C8kL4qziybc9XkWI8hKIhUbF-fKbDDGMKXZx2gncBSDnaH5PVSb9GLiAN0gToWDhJEYYREH9NQGpeehr1IQKv81eAnCIhyce6Nf5OvN~Y3xdhgzul9BFgBGHJIRMrksBciZdHDdw__"
-                      alt="Breed Dry Dog Food"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                    <button
-                      class="add-to-cart-btn"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Add to Cart"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">Breed Dry Dog Food</h3>
-                    <div class="product-price">
-                      <span class="current-price">$100</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="4">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star far"></i>
-                      </div>
-                      <span class="review-count">(35)</span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Product 2: CANON EOS DSLR Camera -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/e608/92a4/f0a3d5d144dce622c7338ec5be12908f?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sMq2g1dzf5hqfyKFe~nuwio3~pavj6YTUKXwYk5SDBdK6Fq3p-a8GZmaU39uC33EU-53I3uQEJzCrrXmMGsbaZ-~ELaL6g41Nb2gxHKh9wWG8RxL5-jy67pLd4~YVz-wjXA74INYHF5-eHfWFgX6dtSzqoOlJ~mT4GHwF1OQE6cUg6lI5qL2EPMm3nsNJH-JlIjmtvvormlkeAjsOdWOeY0tGHaNfEzSCM-m3~oKr4UPoVP3hwWU31DRCmvxOljKpvQl2B8QJM0x-cC0DrnxyHqmTHwmGN9ojH0ugqL-AYEHkmsUdNTXZjZWfIRyY16FDnWTWcet5WwKovwyARTNmw__"
-                      alt="CANON EOS DSLR Camera"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                    <button
-                      class="add-to-cart-btn"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Add to Cart"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">CANON EOS DSLR Camera</h3>
-                    <div class="product-price">
-                      <span class="current-price">$360</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="4.5">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star-half-alt fas"></i>
-                      </div>
-                      <span class="review-count">(95)</span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Product 3: ASUS FHD Gaming Laptop -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/203b/e522/b7b02d10672f6f6147762cf52bfcfc54?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nlfLcKTVgQONekCWLyjSY9e-jKOzGlWHm2QN9VLtof1fX1fouzb12UOXcgz3028VssrMbsZk8kUcKjQL4JqUOv5N-jrd7bwt2tBpi~H8YTvysZ43Q98SSiwOlzp7mxV2yiWOy3G-QhPvkPh6hR2dmgRp5SfLqznUTchDMeD2cyyCG3NukN4biMkQ7em2hHfa9~5DS-0DT~jWbotvtzTO82f5Vf5j5fzSJJSirM9OhXju7~l5qYBKXIDhzzYpuxHtmaBxXni-su4BPF-x9GDkgDjaN2Z5Cu-sF5rRq-ZQoYwQB6WhyQXNMIPBhexLKUmTiK2BWpDXIq2YiWc0J2zKYQ__"
-                      alt="ASUS FHD Gaming Laptop"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                    <button
-                      class="add-to-cart-btn"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Add to Cart"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">ASUS FHD Gaming Laptop</h3>
-                    <div class="product-price">
-                      <span class="current-price">$700</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="5">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                      </div>
-                      <span class="review-count">(325)</span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Product 4: Curology Product Set -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/e7bd/d116/62ea1dfc2d615a5bb054e139a764f306?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jJM7L9SF4sGxAoKMWSuKFDRzWAG9Zm-FmYF2e45EF67IxHR3wXmj8t0zpFYe3HSl0hkglBdPNEhiGAlwXR-1cGLv0Hk2TIugZKm61~wWHwwR0~6hOiWCwuVDBhtVOaAlNv897o8cFpj02PGgcgRjQw8mM6Z~CJ7MF0Lj9Xz38aXWf-Kl~l8goN0yTEgeMkUQ4HrPApmh2qgWw-ryCwqdg4t6Oj7UO0q9gcFENRMw-51Zwws~3-XZE2a4JNrm~D7IWeltQBZdAbcCYdFj7KqcM-zOKTzOLY-2J8~yYXawTWwySYsBLb8xGrrvJZ-UbY-~el1KUq29lPtMJdFTOYB61w__"
-                      alt="Curology Product Set"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                    <button
-                      class="add-to-cart-btn"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Add to Cart"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">Curology Product Set</h3>
-                    <div class="product-price">
-                      <span class="current-price">$500</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="4">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star far"></i>
-                      </div>
-                      <span class="review-count">(145)</span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Product 5: Kids Electric Car -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <span class="new-tag">NEW</span>
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/5f4e/a9ac/f805319ddf3897fc9daaf58559542260?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KxXvGCUOgZ5de2GUiya1ARDtVj1s4zuorwncSxGCL5-kIWfP0jx8b77cmLZZO3udVNf5BGC7LggU4JMb81ng2NyzAinXtspM4lnOiJzt00Z8~trNPEcHIHJZf6kXZDg3IMchbUYImT2bIuXgI5483SRtzflAIhoSV2TI4t-OPdoWkuUSeaR7KvFatFgzA7VwRZVnYz1qCkTKcds1zW6ZYuptBTlA0~fYB~8AifOvuOAFF4nPXCmgx9u8LBoWhrz70oc0j53kMTx6Ni3PwBpZBXOHMws~CtnSABb4gQbKr1wRPA7VUOPsGbDmjP~qVcfZNWgyymQET7-KTpBMfufkWg__"
-                      alt="Kids Electric Car"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">Kids Electric Car</h3>
-                    <div class="product-price">
-                      <span class="current-price">$960</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="5">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                      </div>
-                      <span class="review-count">(65)</span>
-                    </div>
-                    <div class="color-options">
-                      <button
-                        class="color-dot active red"
-                        aria-label="Select Red Color"
-                      ></button>
-                      <button
-                        class="color-dot pink"
-                        aria-label="Select Pink Color"
-                      ></button>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Product 6: Jr. Zoom Soccer Cleats -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/d0b7/bb25/884f6fdfc1357634d7d7b09e05755c2f?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hBQkP4eECaF4xCsH5xjRECzn4gwzt11z1qHFqyIYXsEePxNoPHpwEjNPxFZ91IdZLSM~u5KrU1uEvMLJiw9cTYDL0SaaDGneGiBDx1LSY1Z9zn7U1a5JztBd9bYW0SgKIJRxUdPTN7NsFEBg1-1C6QHoDo8zB8M4GvWP2LU0cDMpJsW5gx1BuyyhzG8dxUI9t86zkpEoIMXK7tACsDc8SgBvBBc-VlyWpGT6~C1DLLjRse2EUdo9ewa6M4vKcxuoneYttZO3vQaDpJZnsdOqW~16z7o~kVou8mpYskwEdvVgQMx3joqsk9kQUouIscVoulANYj-u5udqUCw5DT3VQg__"
-                      alt="Jr. Zoom Soccer Cleats"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">Jr. Zoom Soccer Cleats</h3>
-                    <div class="product-price">
-                      <span class="current-price">$1160</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="4.5">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star-half-alt fas"></i>
-                      </div>
-                      <span class="review-count">(35)</span>
-                    </div>
-                    <div class="color-options">
-                      <button
-                        class="color-dot active yellow"
-                        aria-label="Select Yellow Color"
-                      ></button>
-                      <button
-                        class="color-dot red"
-                        aria-label="Select Red Color"
-                      ></button>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Product 7: GP11 Shooter USB Gamepad -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <span class="new-tag">NEW</span>
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/288e/0133/65fe639fccc1fe4168fca740ef1f85e7?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PRmYCHaBPijPE1680OYh5ny~fs0NP0fehi6hKEpgnniUvAAqOT~AiYJDKxwV3ouyhlFnw9-cVqnk363wVTBydSNbVvCd3qUG~duf-McUGJaznKSPTGMrNzu4TnZaktJfhfcOz6Z~PhQzLJ35L78zZRsK3H4PavsjEdOLRzg29g5CSpKHDI5RpsMZ9-fcIQ4ISiVttg1JuPkgef-HKYSoCzTIH2P0qxLHLaswgjvxm0SiXZAN-ObVNoHoR2QlxR7Xft2X3OAhidk5d6IjFmfg3aSX6EaqN7YqWZNEKtJt1bBJh3uKaQQllpq6xhj51YTkdlnIv508d-UE2z~yzv0uHQ__"
-                      alt="GP11 Shooter USB Gamepad"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">GP11 Shooter USB Gamepad</h3>
-                    <div class="product-price">
-                      <span class="current-price">$660</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="5">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                      </div>
-                      <span class="review-count">(55)</span>
-                    </div>
-                    <div class="color-options">
-                      <button
-                        class="color-dot active black"
-                        aria-label="Select Black Color"
-                      ></button>
-                      <button
-                        class="color-dot red"
-                        aria-label="Select Red Color"
-                      ></button>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Product 8: Quilted Satin Jacket -->
-              <div class="col-lg-4 col-md-6 col-xl-3">
-                <article class="product-card">
-                  <div class="product-image">
-                    <img
-                      src="https://s3-alpha-sig.figma.com/img/04a1/915f/d6cedd7c8b1073685c5f1be1b50e1ac6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=m99yJ2WGLwnghKS662b-ed-vi~kMdaej2umFO3hkoM~R3X0wgtPTmKBRM1vOHhmq0btHHenVHyV~Ros30p1k~ziz7plMFDqTWIzcAgcs~wwvp6u~AeZALMPy881Cz3I~b9q7wq09pYJyjAAwvwIKM2hc-PhMMiByvrUMCccYkoPny3Q~be2ppAa85PaSwIk2KsdMpGccaWpQX6c0jOOAXyeMqJ1MM93jLXepvjRovvz0Qz9jFV4x--hJy-G8hTZBk0SaNnXhBch0NqgGTwhV21GBvjKZ0PlvYglVLatXjbdjZkaZRoDW1tB5BXxdZ8l-85ZIjOYnPK5IpZo26KQT~A__"
-                      alt="Quilted Satin Jacket"
-                      class="img-fluid"
-                    />
-                    <button
-                      class="wishlist-btn"
-                      aria-label="Add to wishlist"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      data-bs-title="Add to Wishlist"
-                    >
-                      <i class="fa-heart far"></i>
-                    </button>
-                    <button class="quick-view" aria-label="Quick view">
-                      <i class="fa-eye far"></i>
-                    </button>
-                  </div>
-                  <div class="product-info">
-                    <h3 class="product-name">Quilted Satin Jacket</h3>
-                    <div class="product-price">
-                      <span class="current-price">$660</span>
-                    </div>
-                    <div class="product-rating">
-                      <div class="stars" data-rating="4.5">
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star fas"></i>
-                        <i class="fa-star-half-alt fas"></i>
-                      </div>
-                      <span class="review-count">(55)</span>
-                    </div>
-                    <div class="color-options">
-                      <button
-                        class="color-dot active green"
-                        aria-label="Select Green Color"
-                      ></button>
-                      <button
-                        class="color-dot red"
-                        aria-label="Select Red Color"
-                      ></button>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <!-- View All Products Button -->
-            <div class="text-center mt-5">
-              <button class="view-all-btn">View All Products</button>
-            </div>
-          </div>
-        </section>
-
-        <!-- Featured Products Section -->
-        <section class="featured-products" aria-label="Featured Products">
-          <div class="container-fluid">
-            <!-- Section Header -->
-            <header class="featured-header">
-              <div class="section-indicator">
-                <span class="indicator-bar"></span>
-                <h3 class="category-label">Featured</h3>
-              </div>
-              <h2 class="section-title">New Arrival</h2>
-            </header>
-
-            <!-- Featured Products Grid -->
-            <div class="featured-grid">
-              <!-- PlayStation 5 Card -->
-              <article class="featured-card playstation-card">
-                <div class="card-content">
-                  <img
-                    src="assets/img/play station 5.png"
-                    alt="PlayStation 5 Console"
-                    class="img-fluid"
-                  />
-                  <div class="card-info">
-                    <h3>PlayStation 5</h3>
-                    <p>
-                      Black and White version of the PS5 coming out on sale.
-                    </p>
-                    <a href="#" class="shop-now-link">
-                      Shop Now
-                      <i class="fa-arrow-right fas"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Right Column -->
-              <div class="right-column">
-                <!-- Women's Collections Card -->
-                <article class="featured-card womens-collections-card">
-                  <div class="card-content">
-                    <img
-                      src="assets/img/womens collection.jpeg"
-                      alt="Women's Collections"
-                      class="img-fluid"
-                    />
-                    <div class="card-info">
-                      <h3>Women's Collections</h3>
-                      <p>
-                        Featured woman collections that give you another vibe.
-                      </p>
-                      <a href="#" class="shop-now-link">
-                        Shop Now
-                        <i class="fa-arrow-right fas"></i>
-                      </a>
-                    </div>
-                  </div>
-                </article>
-
-                <!-- Bottom Row -->
-                <div class="bottom-row">
-                  <!-- Speakers Card -->
-                  <article class="featured-card speakers-card">
-                    <div class="card-content">
-                      <img
-                        src="assets/img/amazon speakers.png"
-                        alt="Amazon Speakers"
-                        class="img-fluid"
-                      />
-                      <div class="card-info">
-                        <h3>Speakers</h3>
-                        <p>Amazon wireless speakers</p>
-                        <a href="#" class="shop-now-link">
-                          Shop Now
-                          <i class="fa-arrow-right fas"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </article>
-
-                  <!-- Perfume Card -->
-                  <article class="featured-card perfume-card">
-                    <div class="card-content">
-                      <img
-                        src="assets/img/perfume.png"
-                        alt="Gucci Intense Oud Perfume"
-                        class="img-fluid"
-                      />
-                      <div class="card-info">
-                        <h3>Perfume</h3>
-                        <p>GUCCI INTENSE OUD EDP</p>
-                        <a href="#" class="shop-now-link">
-                          Shop Now
-                          <i class="fa-arrow-right fas"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Services Banner Section -->
-        <section class="services-banner">
-          <div class="container-fluid">
-            <div class="services-grid">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="fa-truck fas"></i>
-                </div>
-                <h3 class="service-title">FREE AND FAST DELIVERY</h3>
-                <p class="service-description">
-                  Free delivery for all orders over $140
-                </p>
-              </div>
-
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="fa-headset fas"></i>
-                </div>
-                <h3 class="service-title">24/7 CUSTOMER SERVICE</h3>
-                <p class="service-description">
-                  Friendly 24/7 customer support
-                </p>
-              </div>
-
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="fa-shield-alt fas"></i>
-                </div>
-                <h3 class="service-title">MONEY BACK GUARANTEE</h3>
-                <p class="service-description">We reurn money within 30 days</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
     </main>
 
@@ -1425,7 +634,7 @@
               <a href="#" class="footer-logo">
                 <img
                   class="navbar-logo-image"
-                  src="assets/img/logo.png"
+                  src="../assets/img/logo.png"
                   alt="9jacart Logo"
                 />
               </a>
@@ -1436,11 +645,7 @@
               <form class="subscribe-form">
                 <div class="input-group">
                   <input type="email" placeholder="Enter your email" required />
-                  <button
-                    type="submit"
-                    title="Subscribe"
-                    aria-label="Subscribe to newsletter"
-                  >
+                  <button type="submit">
                     <i class="fa-paper-plane fas"></i>
                   </button>
                 </div>
@@ -1489,48 +694,28 @@
             <p class="app-promo">Save $3 with App New User Only</p>
             <div class="app-download">
               <div class="qr-code">
-                <img src="assets/img/qrcode.jpeg" alt="QR Code" />
+                <img src="../assets/img/qrcode.jpeg" alt="QR Code" />
               </div>
               <div class="app-buttons">
                 <a href="#" class="app-btn" id="google">
                   <img
-                    src="assets/img/google-icon.png"
+                    src="../assets/img/google-icon.png"
                     alt="Get it on Google Play"
                   />
                 </a>
                 <a href="#" class="app-btn" id="apple">
                   <img
-                    src="assets/img/apple-icon.png"
+                    src="../assets/img/apple-icon.png"
                     alt="Download on the App Store"
                   />
                 </a>
               </div>
             </div>
             <div class="social-links">
-              <a
-                href="#"
-                title="Follow us on Facebook"
-                aria-label="Follow us on Facebook"
-                ><i class="fa-facebook-f fab"></i
-              ></a>
-              <a
-                href="#"
-                title="Follow us on Twitter"
-                aria-label="Follow us on Twitter"
-                ><i class="fa-twitter fab"></i
-              ></a>
-              <a
-                href="#"
-                title="Follow us on Instagram"
-                aria-label="Follow us on Instagram"
-                ><i class="fa-instagram fab"></i
-              ></a>
-              <a
-                href="#"
-                title="Follow us on LinkedIn"
-                aria-label="Follow us on LinkedIn"
-                ><i class="fa-linkedin-in fab"></i
-              ></a>
+              <a href="#"><i class="fa-facebook-f fab"></i></a>
+              <a href="#"><i class="fa-twitter fab"></i></a>
+              <a href="#"><i class="fa-instagram fab"></i></a>
+              <a href="#"><i class="fa-linkedin-in fab"></i></a>
             </div>
           </div>
         </div>
@@ -1546,9 +731,9 @@
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      onerror="this.onerror=null;this.href='./assets/js/bootstrap.bundle.min.js';"
+      onerror="this.onerror=null;this.href='../assets/js/bootstrap.bundle.min.js';"
     ></script>
     <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
