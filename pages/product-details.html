@@ -243,13 +243,11 @@
                     <label>Colours:</label>
                     <div class="color-options">
                       <button
-                        class="color-dot active"
-                        style="background-color: #000000"
+                        class="color-dot black active"
                         aria-label="Select Black Color"
                       ></button>
                       <button
-                        class="color-dot"
-                        style="background-color: #db4444"
+                        class="color-dot red"
                         aria-label="Select Red Color"
                       ></button>
                     </div>
@@ -291,7 +289,11 @@
                     </button>
                   </div>
                   <button class="btn btn-success buy-now-btn">Buy Now</button>
-                  <button class="btn btn-outline-dark add-to-wishlist">
+                  <button
+                    class="btn btn-outline-dark add-to-wishlist"
+                    title="Add to Wishlist"
+                    aria-label="Add to Wishlist"
+                  >
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
@@ -600,7 +602,7 @@
           </div>
 
           <!-- 9Jacart Payment Options -->
-          <div class="footer-column">
+          <div class="footer-column payment-options">
             <h3>9Jacart Payment Options</h3>
             <ul class="footer-links">
               <li><a href="#">Bank Payments (Visa, MasterCard)</a></li>
@@ -611,7 +613,7 @@
           </div>
 
           <!-- Let Us Help You -->
-          <div class="footer-column">
+          <div class="footer-column let-us-help">
             <h3>Let Us Help You</h3>
             <ul class="footer-links">
               <li><a href="#">Your Account</a></li>
@@ -645,7 +647,11 @@
               <form class="subscribe-form">
                 <div class="input-group">
                   <input type="email" placeholder="Enter your email" required />
-                  <button type="submit">
+                  <button
+                    type="submit"
+                    title="Subscribe to newsletter"
+                    aria-label="Subscribe to newsletter"
+                  >
                     <i class="fa-paper-plane fas"></i>
                   </button>
                 </div>
@@ -712,10 +718,30 @@
               </div>
             </div>
             <div class="social-links">
-              <a href="#"><i class="fa-facebook-f fab"></i></a>
-              <a href="#"><i class="fa-twitter fab"></i></a>
-              <a href="#"><i class="fa-instagram fab"></i></a>
-              <a href="#"><i class="fa-linkedin-in fab"></i></a>
+              <a
+                href="#"
+                title="Follow us on Facebook"
+                aria-label="Follow us on Facebook"
+                ><i class="fa-facebook-f fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on Twitter"
+                aria-label="Follow us on Twitter"
+                ><i class="fa-twitter fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on Instagram"
+                aria-label="Follow us on Instagram"
+                ><i class="fa-instagram fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on LinkedIn"
+                aria-label="Follow us on LinkedIn"
+                ><i class="fa-linkedin-in fab"></i
+              ></a>
             </div>
           </div>
         </div>
