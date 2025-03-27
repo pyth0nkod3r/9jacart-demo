@@ -98,7 +98,12 @@
                   placeholder="Search products..."
                   class="search-input"
                 />
-                <button type="submit" class="search-button">
+                <button
+                  type="submit"
+                  class="search-button"
+                  title="Search"
+                  aria-label="Search"
+                >
                   <i class="fa-search fas"></i>
                 </button>
               </div>
@@ -253,12 +258,20 @@
                 </div>
               </div>
             </div>
-            <div class="navigation-arrows">
-              <button class="nav-arrow prev" aria-label="Previous products">
-                <i class="fa-arrow-left fas"></i>
+            <div class="navigation-arrows flash-nav-arrow">
+              <button
+                class="nav-arrow prev"
+                title="Previous"
+                aria-label="View previous flash sale items"
+              >
+                <i class="fa-chevron-left fas"></i>
               </button>
-              <button class="nav-arrow next" aria-label="Next products">
-                <i class="fa-arrow-right fas"></i>
+              <button
+                class="nav-arrow next"
+                title="Next"
+                aria-label="View next flash sale items"
+              >
+                <i class="fa-chevron-right fas"></i>
               </button>
             </div>
           </div>
@@ -492,10 +505,18 @@
               <h2>Browse By Category</h2>
             </div>
             <div class="navigation-arrows">
-              <button class="nav-arrow prev">
+              <button
+                class="nav-arrow prev"
+                title="Previous"
+                aria-label="View previous category"
+              >
                 <i class="fa-chevron-left fas"></i>
               </button>
-              <button class="nav-arrow next">
+              <button
+                class="nav-arrow next"
+                title="Next"
+                aria-label="View next category"
+              >
                 <i class="fa-chevron-right fas"></i>
               </button>
             </div>
@@ -776,15 +797,20 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
                   <h2 class="section-title">Explore Our Products</h2>
-                  <div class="navigation-arrows explore-nav-arrow">
+                  <div class="navigation-arrows">
                     <button
                       class="nav-arrow prev"
-                      aria-label="Previous products"
+                      title="Previous"
+                      aria-label="View previous items"
                     >
-                      <i class="fa-arrow-left fas"></i>
+                      <i class="fa-chevron-left fas"></i>
                     </button>
-                    <button class="nav-arrow next" aria-label="Next products">
-                      <i class="fa-arrow-right fas"></i>
+                    <button
+                      class="nav-arrow next"
+                      title="Next"
+                      aria-label="View next items"
+                    >
+                      <i class="fa-chevron-right fas"></i>
                     </button>
                   </div>
                 </div>
@@ -1029,13 +1055,11 @@
                     </div>
                     <div class="color-options">
                       <button
-                        class="color-dot active"
-                        style="background-color: #db4444"
+                        class="color-dot active red"
                         aria-label="Select Red Color"
                       ></button>
                       <button
-                        class="color-dot"
-                        style="background-color: #fb7181"
+                        class="color-dot pink"
                         aria-label="Select Pink Color"
                       ></button>
                     </div>
@@ -1082,13 +1106,11 @@
                     </div>
                     <div class="color-options">
                       <button
-                        class="color-dot active"
-                        style="background-color: #f0dd0d"
+                        class="color-dot active yellow"
                         aria-label="Select Yellow Color"
                       ></button>
                       <button
-                        class="color-dot"
-                        style="background-color: #db4444"
+                        class="color-dot red"
                         aria-label="Select Red Color"
                       ></button>
                     </div>
@@ -1136,13 +1158,11 @@
                     </div>
                     <div class="color-options">
                       <button
-                        class="color-dot active"
-                        style="background-color: #000000"
+                        class="color-dot active black"
                         aria-label="Select Black Color"
                       ></button>
                       <button
-                        class="color-dot"
-                        style="background-color: #db4444"
+                        class="color-dot red"
                         aria-label="Select Red Color"
                       ></button>
                     </div>
@@ -1189,13 +1209,11 @@
                     </div>
                     <div class="color-options">
                       <button
-                        class="color-dot active"
-                        style="background-color: #1b5e20"
+                        class="color-dot active green"
                         aria-label="Select Green Color"
                       ></button>
                       <button
-                        class="color-dot"
-                        style="background-color: #db4444"
+                        class="color-dot red"
                         aria-label="Select Red Color"
                       ></button>
                     </div>
@@ -1423,7 +1441,11 @@
               <form class="subscribe-form">
                 <div class="input-group">
                   <input type="email" placeholder="Enter your email" required />
-                  <button type="submit">
+                  <button
+                    type="submit"
+                    title="Subscribe"
+                    aria-label="Subscribe to newsletter"
+                  >
                     <i class="fa-paper-plane fas"></i>
                   </button>
                 </div>
@@ -1490,10 +1512,30 @@
               </div>
             </div>
             <div class="social-links">
-              <a href="#"><i class="fa-facebook-f fab"></i></a>
-              <a href="#"><i class="fa-twitter fab"></i></a>
-              <a href="#"><i class="fa-instagram fab"></i></a>
-              <a href="#"><i class="fa-linkedin-in fab"></i></a>
+              <a
+                href="#"
+                title="Follow us on Facebook"
+                aria-label="Follow us on Facebook"
+                ><i class="fa-facebook-f fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on Twitter"
+                aria-label="Follow us on Twitter"
+                ><i class="fa-twitter fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on Instagram"
+                aria-label="Follow us on Instagram"
+                ><i class="fa-instagram fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on LinkedIn"
+                aria-label="Follow us on LinkedIn"
+                ><i class="fa-linkedin-in fab"></i
+              ></a>
             </div>
           </div>
         </div>

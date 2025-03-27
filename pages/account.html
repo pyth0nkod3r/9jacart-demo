@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9ja-cart - Your Online Shopping Destination</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css "
+      onerror="this.onerror=null;this.href='../assets/css/font-awesome.min.css';"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      onerror="this.onerror=null;this.href='../assets/css/animate.min.css';"
+    />
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      onerror="this.onerror=null;this.href='../assets/css/modern-normalize.css';"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      onerror="this.onerror=null;this.href='../assets/css/bootstrap.min.css';"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="site-header">
+      <!-- Top Announcement Bar -->
+      <div class="announcement-bar">
+        <div class="container-fluid">
+          <div
+            class="d-flex align-items-center justify-content-between announcement-content"
+          >
+            <div class="flex-grow-1 text-center">
+              <span class="announcement-text">
+                Summer Sale For All Swim Suits And Free Express Delivery - OFF
+                50%!
+                <a href="#" class="shop-now">ShopNow</a>
+              </span>
+            </div>
+            <div class="language-selector">
+              English <i class="fa-chevron-down fas"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation Bar -->
+      <nav class="main-nav">
+        <div class="container-fluid">
+          <div
+            class="d-flex nav-content align-items-center justify-content-between"
+          >
+            <!-- Add this button before the logo -->
+            <button
+              class="d-md-none navbar-toggler"
+              type="button"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-bars fas"></i>
+            </button>
+            <!-- Logo -->
+            <a href="#" class="logo">
+              <img
+                class="navbar-logo-image"
+                src="../assets/img/logo.png"
+                alt="9jacart Logo"
+              />
+            </a>
+
+            <!-- Delivery Location -->
+            <div class="delivery-location">
+              <i class="fa-map-marker-alt fas"></i>
+              <div class="location-text">
+                <span class="deliver-to">Deliver to</span>
+                <span class="country">Nigeria</span>
+              </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="flex-grow-1 search-container">
+              <div class="search-bar">
+                <button class="category-dropdown">
+                  All <i class="fa-chevron-down fas"></i>
+                </button>
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  class="search-input"
+                />
+                <button
+                  type="submit"
+                  class="search-button"
+                  title="Search"
+                  aria-label="Search"
+                >
+                  <i class="fa-search fas"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Account & Lists -->
+            <div class="account-section">
+              <div class="account-dropdown">
+                <span class="small-text">Hello, Sign in</span>
+                <span class="bold-text">Account & Lists</span>
+              </div>
+            </div>
+
+            <!-- Returns & Orders -->
+            <div class="returns-section">
+              <span class="small-text">Return</span>
+              <span class="bold-text">& Orders</span>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart-section">
+              <i class="fa-shopping-cart fas"></i>
+              <span>Cart</span>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="nav-language-selector">
+              EN <i class="fa-chevron-down fas"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <div class="container-fluid">
+        <hr />
+        <!-- Page Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="page-navigation">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-decoration-none text-muted">Home</a>
+                </li>
+                <li class="breadcrumb-item active text-dark">My Account</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="welcome-text">
+            <span class="text-dark">Welcome! Dorime</span>
+          </div>
+        </div>
+
+        <!-- Account Profile Section -->
+        <section class="account-profile py-4">
+          <div class="row">
+            <!-- Left Column - User Info -->
+            <div class="col-md-3">
+              <div class="user-info bg-white p-4 rounded">
+                <h2 class="fs-5 mb-4">Manage My Account</h2>
+                <nav class="profile-nav">
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-3">
+                      <a
+                        href="#"
+                        class="d-flex align-items-center text-dark text-decoration-none active"
+                      >
+                        My Profile
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a
+                        href="#"
+                        class="d-flex align-items-center text-muted text-decoration-none"
+                      >
+                        Addresses
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a
+                        href="#"
+                        class="d-flex align-items-center text-muted text-decoration-none"
+                      >
+                        My Payment Options
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <h2 class="fs-5 mb-4 mt-5">My Orders</h2>
+                <nav class="profile-nav">
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-3">
+                      <a
+                        href="#"
+                        class="d-flex align-items-center text-muted text-decoration-none"
+                      >
+                        My Returns
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a
+                        href="#"
+                        class="d-flex align-items-center text-muted text-decoration-none"
+                      >
+                        My Cancellations
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <h2 class="fs-5 mb-4 mt-5">Notifications</h2>
+              </div>
+            </div>
+
+            <!-- Right Column - Account Details -->
+            <div class="col-md-9">
+              <div class="account-details bg-white p-4 rounded">
+                <h2 class="fs-4 mb-4">Edit Your Profile</h2>
+                <form>
+                  <div class="row">
+                    <!-- First Name -->
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName" class="form-label"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control bg-light"
+                        id="firstName"
+                        placeholder="Dorime"
+                      />
+                    </div>
+                    <!-- Last Name -->
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control bg-light"
+                        id="lastName"
+                        placeholder="Lamire"
+                      />
+                    </div>
+                    <!-- Email -->
+                    <div class="col-md-6 mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control bg-light"
+                        id="email"
+                        placeholder="rimere@gmail.com"
+                      />
+                    </div>
+                    <!-- Address -->
+                    <div class="col-md-6 mb-3">
+                      <label for="address" class="form-label">Address</label>
+                      <input
+                        type="text"
+                        class="form-control bg-light"
+                        id="address"
+                        placeholder="Kobape, Ogun, Abeokuta"
+                      />
+                    </div>
+                    <!-- Password Change Section -->
+                    <div class="col-12 mt-4">
+                      <h3 class="fs-5 mb-3">Password Changes</h3>
+                      <div class="row">
+                        <div class="col-12 mb-3">
+                          <input
+                            type="password"
+                            class="form-control bg-light"
+                            placeholder="Current Password"
+                          />
+                        </div>
+                        <div class="col-12 mb-3">
+                          <input
+                            type="password"
+                            class="form-control bg-light"
+                            placeholder="New Password"
+                          />
+                        </div>
+                        <div class="col-12 mb-3">
+                          <input
+                            type="password"
+                            class="form-control bg-light"
+                            placeholder="Confirm New Password"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Action Buttons -->
+                    <div class="col-12 mt-4 text-end">
+                      <button type="button" class="btn btn-light me-2">
+                        Cancel
+                      </button>
+                      <button type="submit" class="btn btn-success">
+                        Save Changes
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Secondary Footer -->
+    <footer class="secondary-footer">
+      <div class="container-fluid">
+        <div class="footer-content">
+          <!-- Know Us More -->
+          <div class="footer-column">
+            <h3>Know Us More</h3>
+            <ul class="footer-links">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms & Conditions (T's & C's)</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Make Money With Us -->
+          <div class="footer-column">
+            <h3>Make Money With Us</h3>
+            <ul class="footer-links">
+              <li><a href="#">Sell Products on 9Jacart</a></li>
+              <li><a href="#">Advertise Your Product</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+            </ul>
+          </div>
+
+          <!-- 9Jacart Payment Options -->
+          <div class="footer-column">
+            <h3>9Jacart Payment Options</h3>
+            <ul class="footer-links">
+              <li><a href="#">Bank Payments (Visa, MasterCard)</a></li>
+              <li><a href="#">Buy Now, Pay Later (BNPL)</a></li>
+              <li><a href="#">Pay on Delivery</a></li>
+              <li><a href="#">Emergency Credit</a></li>
+            </ul>
+          </div>
+
+          <!-- Let Us Help You -->
+          <div class="footer-column">
+            <h3>Let Us Help You</h3>
+            <ul class="footer-links">
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Returns & Replacements</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Primary Footer Section -->
+    <footer class="primary-footer">
+      <div class="container-fluid">
+        <div class="footer-content">
+          <!-- Logo and Subscribe Column -->
+          <div class="footer-column">
+            <div class="footer-brand">
+              <a href="#" class="footer-logo">
+                <img
+                  class="navbar-logo-image"
+                  src="../assets/img/logo.png"
+                  alt="9jacart Logo"
+                />
+              </a>
+            </div>
+            <div class="subscribe-section">
+              <h3>Subscribe</h3>
+              <p>Get 10% off your first order</p>
+              <form class="subscribe-form">
+                <div class="input-group">
+                  <input type="email" placeholder="Enter your email" required />
+                  <button
+                    type="submit"
+                    title="Subscribe"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    <i class="fa-paper-plane fas"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Support Column -->
+          <div class="footer-column">
+            <h3>Support</h3>
+            <address>
+              No2 Buhari Estate,<br />
+              Kobape Road, GFA<br />
+              Abeokuta, Ogun.<br /><br />
+              <a href="mailto:9jacart@gmail.com">9jacart@gmail.com</a><br />
+              <a href="tel:+2348105658696">+234-8105658696</a>
+            </address>
+          </div>
+
+          <!-- Account Column -->
+          <div class="footer-column">
+            <h3>Account</h3>
+            <ul class="footer-links">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Login / Register</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+
+          <!-- Quick Link Column -->
+          <div class="footer-column">
+            <h3>Quick Link</h3>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Download App Column -->
+          <div class="footer-column">
+            <h3>Download App</h3>
+            <p class="app-promo">Save $3 with App New User Only</p>
+            <div class="app-download">
+              <div class="qr-code">
+                <img src="../assets/img/qrcode.jpeg" alt="QR Code" />
+              </div>
+              <div class="app-buttons">
+                <a href="#" class="app-btn" id="google">
+                  <img
+                    src="../assets/img/google-icon.png"
+                    alt="Get it on Google Play"
+                  />
+                </a>
+                <a href="#" class="app-btn" id="apple">
+                  <img
+                    src="../assets/img/apple-icon.png"
+                    alt="Download on the App Store"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="#"
+                title="Follow us on Facebook"
+                aria-label="Follow us on Facebook"
+                ><i class="fa-facebook-f fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on Twitter"
+                aria-label="Follow us on Twitter"
+                ><i class="fa-twitter fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on Instagram"
+                aria-label="Follow us on Instagram"
+                ><i class="fa-instagram fab"></i
+              ></a>
+              <a
+                href="#"
+                title="Follow us on LinkedIn"
+                aria-label="Follow us on LinkedIn"
+                ><i class="fa-linkedin-in fab"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright Bar -->
+      <div class="copyright-bar">
+        <div class="container-fluid">
+          <p>© Copyright 2025. All right reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      onerror="this.onerror=null;this.href='../assets/js/bootstrap.bundle.min.js';"
+    ></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

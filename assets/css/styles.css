@@ -1822,3 +1822,43 @@ img {
     padding: 20px 0.5rem;
   }
 }
+
+/* Color dot styles */
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+
+.color-dot:hover {
+  transform: scale(1.1);
+}
+
+.color-dot.active {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #000;
+}
+
+.color-dot.red {
+  background-color: #db4444;
+}
+
+.color-dot.pink {
+  background-color: #fb7181;
+}
+
+.color-dot.yellow {
+  background-color: #f0dd0d;
+}
+
+.color-dot.black {
+  background-color: #000000;
+}
+
+.color-dot.green {
+  background-color: #1b5e20;
+}
