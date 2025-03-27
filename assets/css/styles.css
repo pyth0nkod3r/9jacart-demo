@@ -272,13 +272,159 @@ body {
 
 /* Main Content Section */
 .main-content {
-  padding: 0;
+  padding: 20px 0;
   background-color: var(--white);
 }
 
 .main-content .container-fluid {
   padding: 0 40px;
   overflow-x: hidden;
+}
+
+/* Categories Page */
+.categories-content {
+  margin-top: 20px;
+}
+
+.categories-sidebar {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.categories-list a {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.categories-list a:hover,
+.categories-list a.active {
+  color: #DB4444;
+}
+
+.filter-section {
+  margin-bottom: 30px;
+}
+
+.filter-section .btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* Product Card Styles */
+.product-card {
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.product-image {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wishlist-btn,
+.quick-view {
+  position: absolute;
+  right: 10px;
+  background: #fff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wishlist-btn {
+  top: 10px;
+}
+
+.quick-view {
+  top: 54px;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover .add-to-cart-btn {
+  opacity: 1;
+}
+
+.product-name {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #DB4444;
+  margin-bottom: 8px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  color: #FFD700;
+  margin-right: 5px;
+}
+
+.review-count {
+  color: #666;
+  font-size: 14px;
+}
+
+.new-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #DB4444;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.color-options {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Hero Section */
@@ -1608,6 +1754,147 @@ img {
   background-color: #f8f9fa;
 }
 
+/* Color dot styles */
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+
+.color-dot:hover {
+  transform: scale(1.1);
+}
+
+.color-dot.active {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #000;
+}
+
+.color-dot.red {
+  background-color: #db4444;
+}
+
+.color-dot.pink {
+  background-color: #fb7181;
+}
+
+.color-dot.yellow {
+  background-color: #f0dd0d;
+}
+
+.color-dot.black {
+  background-color: #000000;
+}
+
+.color-dot.green {
+  background-color: #1b5e20;
+}
+
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.login-image-container {
+  flex: 1;
+  background-color: #f9f8f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.login-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.login-form-container {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-container h2 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: var(--leaf-green);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-button {
+  background-color: var(--dark-navy);
+  color: var(--white);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: var(--leaf-green);
+}
+
+.forgot-password {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password:hover {
+  color: var(--leaf-green);
+  text-decoration: underline;
+}
+
+
 /* All Media Queries Consolidated */
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1893,6 +2180,34 @@ img {
 
 /* Mobile Devices */
 @media (min-width: 0) and (max-width: 576px) {
+  /* Login Page Responsive */
+  .login-container {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+  
+  .login-image-container {
+    display: none;
+  }
+  
+  .login-form-container {
+    padding: 20px;
+  }
+  
+  .login-form-container h2 {
+    font-size: 28px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .login-button {
+    width: 100%;
+  }
+  
   /* Typography */
   .category-label {
     font-size: 16px;
@@ -2008,44 +2323,4 @@ img {
   .services-banner {
     padding: 20px 0.5rem;
   }
-}
-
-/* Color dot styles */
-.color-dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  margin-right: 8px;
-  transition: transform 0.2s;
-}
-
-.color-dot:hover {
-  transform: scale(1.1);
-}
-
-.color-dot.active {
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 1px #000;
-}
-
-.color-dot.red {
-  background-color: #db4444;
-}
-
-.color-dot.pink {
-  background-color: #fb7181;
-}
-
-.color-dot.yellow {
-  background-color: #f0dd0d;
-}
-
-.color-dot.black {
-  background-color: #000000;
-}
-
-.color-dot.green {
-  background-color: #1b5e20;
 }

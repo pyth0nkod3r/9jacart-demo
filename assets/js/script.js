@@ -426,6 +426,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Initialize Category Cards
         initializeCategoryCards();
 
+        // Initialize Filter Section
+        initializeFilterSection();
+
         // Initialize Flash Sales Section
         const flashSalesSection = document.querySelector(".flash-sales");
         if (flashSalesSection) {
@@ -483,3 +486,176 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start initialization
     initializeAllSections();
 });
+
+
+// Initialize Filter Section
+function initializeFilterSection() {
+    const sortDropdown = document.querySelector('.filter-section button[title="Sort Products"]');
+    const priceRangeDropdown = document.querySelector('.filter-section button[title="Filter by Price"]');
+    const productsGrid = document.querySelector('.products-grid');
+
+    if (sortDropdown && productsGrid) {
+        const sortMenu = new bootstrap.Dropdown(sortDropdown);
+        const sortOptions = [
+            { text: 'Price: Low to High', value: 'price-asc' },
+            { text: 'Price: High to Low', value: 'price-desc' },
+            { text: 'Rating: High to Low', value: 'rating-desc' },
+            { text: 'Most Reviewed', value: 'reviews-desc' }
+        ];
+
+        // Create dropdown menu
+        const dropdownMenu = document.createElement('ul');
+        dropdownMenu.className = 'dropdown-menu';
+        sortOptions.forEach(option => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.className = 'dropdown-item';
+            a.href = '#';
+            a.textContent = option.text;
+            a.dataset.value = option.value;
+            li.appendChild(a);
+            dropdownMenu.appendChild(li);
+        });
+        sortDropdown.after(dropdownMenu);
+
+        // Handle sort selection
+        dropdownMenu.addEventListener('click', (e) => {
+            if (e.target.classList.contains('dropdown-item')) {
+                e.preventDefault();
+                const value = e.target.dataset.value;
+                const products = Array.from(productsGrid.children);
+
+                products.sort((a, b) => {
+                    const getPrice = el => parseFloat(el.querySelector('.current-price').textContent.replace('$', ''));
+                    const getRating = el => parseInt(el.querySelector('.stars').dataset.rating);
+                    const getReviews = el => parseInt(el.querySelector('.review-count').textContent.match(/\d+/)[0]);
+
+                    switch (value) {
+                        case 'price-asc':
+                            return getPrice(a) - getPrice(b);
+                        case 'price-desc':
+                            return getPrice(b) - getPrice(a);
+                        case 'rating-desc':
+                            return getRating(b) - getRating(a);
+                        case 'reviews-desc':
+                            return getReviews(b) - getReviews(a);
+                        default:
+                            return 0;
+                    }
+                });
+
+                // Reorder products in the grid
+                products.forEach(product => productsGrid.appendChild(product));
+                sortDropdown.textContent = e.target.textContent;
+            }
+        });
+    }
+
+    if (priceRangeDropdown && productsGrid) {
+        const priceMenu = new bootstrap.Dropdown(priceRangeDropdown);
+        const ranges = [
+            { text: 'Under $100', min: 0, max: 100 },
+            { text: '$100 - $500', min: 100, max: 500 },
+            { text: '$500 - $1000', min: 500, max: 1000 },
+            { text: 'Over $1000', min: 1000, max: Infinity }
+        ];
+
+        // Create price range menu
+        const rangeMenu = document.createElement('ul');
+        rangeMenu.className = 'dropdown-menu';
+        ranges.forEach(range => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.className = 'dropdown-item';
+            a.href = '#';
+            a.textContent = range.text;
+            a.dataset.min = range.min;
+            a.dataset.max = range.max;
+            li.appendChild(a);
+            rangeMenu.appendChild(li);
+        });
+        priceRangeDropdown.after(rangeMenu);
+
+        // Handle price range selection
+        rangeMenu.addEventListener('click', (e) => {
+            if (e.target.classList.contains('dropdown-item')) {
+                e.preventDefault();
+                const min = parseFloat(e.target.dataset.min);
+                const max = parseFloat(e.target.dataset.max);
+
+                Array.from(productsGrid.children).forEach(product => {
+                    const price = parseFloat(product.querySelector('.current-price').textContent.replace('$', ''));
+                    product.style.display = (price >= min && price <= max) ? '' : 'none';
+                });
+
+                priceRangeDropdown.textContent = e.target.textContent;
+            }
+        });
+    }
+}
+
+// Initialize all sections
+function initializeAllSections() {
+    // Initialize common UI elements
+    initializeCommonUI();
+
+    // Initialize Category Cards
+    initializeCategoryCards();
+
+    // Initialize Flash Sales Section
+    const flashSalesSection = document.querySelector(".flash-sales");
+    if (flashSalesSection) {
+        initializeTooltips(flashSalesSection);
+        initializeProductInteractions(flashSalesSection);
+        initializeProductNavigation(flashSalesSection, {
+            enableHoverEffects: true,
+        });
+
+        // Set countdown end date to 5 days from now
+        const endDate = new Date();
+        endDate.setDate(endDate.getDate() + 5);
+        initializeCountdownTimer(endDate);
+    }
+
+    // Initialize Best Selling Section
+    const bestSellingSection = document.querySelector(".best-selling");
+    if (bestSellingSection) {
+        initializeTooltips(bestSellingSection);
+        initializeProductInteractions(bestSellingSection);
+    }
+
+    // Initialize Product Display Section
+    const productDisplaySection = document.querySelector(".product-display");
+    if (productDisplaySection) {
+        initializeTooltips(productDisplaySection);
+        initializeProductInteractions(productDisplaySection);
+        initializeProductNavigation(productDisplaySection);
+    }
+
+    // Initialize Star Rating
+    initializeStarRating();
+
+    // Initialize Footer
+    initializeFooter();
+}
+
+// Add mobile menu handling
+const navbarToggler = document.querySelector('.navbar-toggler');
+if (navbarToggler) {
+    navbarToggler.addEventListener('click', function () {
+        const navContent = document.querySelector('.nav-content');
+        navContent.classList.toggle('show-mobile-menu');
+    });
+}
+
+// Handle window resize
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+        const navContent = document.querySelector('.nav-content');
+        navContent.classList.remove('show-mobile-menu');
+    }
+});
+
+// Start initialization
+initializeAllSections(); 
+// End of DOMContentLoaded event listener
